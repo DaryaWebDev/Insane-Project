@@ -5,25 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Отдел новостей</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://use.fontawesome.com/e476915286.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+
+
+
+<header class="header">
       <div class="container">
         <div class="header__top">
-          <a href="#" class="logo">
+          <a href="#" class="logo header__logo">
             <img src="icons/Logo.svg" alt="logo" />
           </a>
           <div class="header__wrapper">
-            <nav class="menu">
+            <nav class="menu header__menu">
               <ul class="menu__items">
-                <li class="menu__item">Домой</li>
-                <li class="menu__item">Лендинги angle-down</li>
-                <li class="menu__item">Страницы angle-down</li>
-                <li class="menu__item">Помощь</li>
+                <li class="menu__item menu__item--one">
+                  <a class="menu__item-link" href="#">Домой</a>
+                </li>
+                <li class="menu__item menu__item--two">
+                  <a class="menu__item-link" href="#"
+                    >Лендинги<i class="fa fa-angle-down"></i
+                  ></a>
+                  <ul class="menu__hiden-items">
+                    <li class="menu__hiden-item" href="#"> <a href="">Лендинг One</a></li>
+                    <li class="menu__hiden-item" href="#"><a href="">Лендинг Two</a></li>
+                    <li class="menu__hiden-item" href="#"><a href="">Лендинг Three</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__item-link" href="#"
+                    >Страницы<i class="fa fa-angle-down"></i
+                  ></a>
+                  <ul class="menu__hiden-items">
+                    <li class="menu__hiden-item" href="#"> <a href="">Страница One</a></li>
+                    <li class="menu__hiden-item" href="#"><a href="">Страница Two</a></li>
+                    <li class="menu__hiden-item" href="#"><a href="">Страница Three</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__item-link" href="#">Помощь</a>
+                </li>
               </ul>
             </nav>
-            <button class="header__btn">Получить</button>
+            <a class="header__btn">Получить</a>
           </div>
         </div>
         <!-- /.header__top -->
@@ -31,7 +59,10 @@
           <h1 class="header__title">Отдел новостей</h1>
           <div class="search header__search">
             <div class="search__form">
-              <input type="text" class="search__input" />
+              <div class="search__input-wrapper">
+                <i class="fa fa-search"></i>
+                <input  class="search__input" placeholder="Поиск постов" type="text" />
+              </div>
               <button class="search__btn">Поиск</button>
             </div>
             <div class="search__wrapper">
@@ -43,34 +74,37 @@
               </div>
             </div>
           </div>
+          <img src="img/Wave.svg" alt="" class="header__wave-img">
           <!-- /.search -->
           <div class="best-offer">
             <a href="#" class="best-offer__link">
-              <img class="best-offer__img" src="" alt="" />
+              <img class="best-offer__img" src="img/promo-img.webp" alt="" />
               <div class="best-offer__content">
                 <span class="best-offer__tag">Предложения</span>
-                <h2 class="best-offer__title"></h2>
+                <h2 class="best-offer__title">
+                  Дешевые Авиабилеты - Отличный Способ Сэкономить
+                </h2>
                 <p class="best-offer__descr">
                   В этом цифровом поколении, где информацию можно легко получить
                   за секунды, визитки ...
                 </p>
-                <div class="article">
-                  <div class="article__user-info">
-                    <img class="article__avatar" src="" alt="" />
-                    <div class="article__wrapper">
-                      <span class="article__name">Viola Manisa</span>
-                      <div class="article__status">
-                        <img class="article__status-img" src="" alt="" />
-                        <span class="article__status-descr"
+                <div class="author">
+                  <div class="author__user-info">
+                    <img class="author__avatar" src="" alt="" />
+                    <div class="author__wrapper">
+                      <span class="author__name">Viola Manisa</span>
+                      <div class="author__status">
+                        <img class="author__status-img" src="" alt="" />
+                        <span class="author__status-descr"
                           >Verified writer</span
                         >
                       </div>
                     </div>
                   </div>
-                  <!-- /.article__user-info -->
-                  <span class="article__date">02 May</span>
+                  <!-- /.author__user-info -->
+                  <span class="author__date">02 May</span>
                 </div>
-                <!-- /.article -->
+                <!-- /.author -->
               </div>
               <!-- /.best-offer__content -->
             </a>
@@ -79,5 +113,196 @@
         </div>
       </div>
     </header>
+
+
+    <section class="popular">
+      <div class="container">        
+          <h2 class="popular__title">Популярные Статьи</h2>
+          <div class="popular__info">
+          <div class="popular__text">
+            Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+            короткими и длинными историями команды, стоящей за компанией.
+          </div>
+          <a href="#" class="link link--see"
+            >Смотреть все <i class="link__fa fa fa-arrow-right"></i
+          ></a>
+          </div>
+          <div class="popular__wrapper">
+            <div class="popular__card">
+              <a href="#" class="popular__articles">
+                <span class="offer offer--main">Предложения</span>
+                <h3 class="popular__subtitle">
+                  Как защитить свою семью от угарного газа
+                </h3>
+                <img
+                  src="img/article-img-1.webp"
+                  alt="popular: article"
+                  class="popular__img"
+                />
+
+                <div class="author">
+                  <div class="author__user-info">
+                    <img class="author__avatar" src="img/user-avatar-1.webp" alt="" />
+                    <div class="author__wrapper">
+                      <span class="author__name">Viola Manisa</span>
+                      <div class="author__status">
+                        <img class="author__status-img" src="icons/check.svg" alt="" />
+                        <span class="author__status-descr"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.author__user-info -->
+                  <span class="author__date">02 May</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="popular__card">
+              <a href="#" class="popular__articles popular__articles--pt332">
+                <span class="offer offer--main">Предложения</span>
+                <h3 class="popular__subtitle popular__subtitle--mb36">
+                  Материнство - самая трудная и лучшая работа на свете
+                </h3>
+                <img
+                  src="img/article-img-2.webp"
+                  alt="popular: article"
+                  class="popular__img"
+                />
+                <div class="author">
+                  <div class="author__user-info">
+                    <img class="author__avatar" src="img/user-avatar-2.webp" alt="" />
+                    <div class="author__wrapper">
+                      <span class="author__name">Joshua William</span>
+                      <div class="author__status">
+                        <img class="author__status-img" src="icons/check.svg" alt="" />
+                        <span class="author__status-descr"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.author__user-info -->
+                  <span class="author__date">02 May</span>
+                </div>
+              </a>
+            </div>
+            <!-- /.popular__img -->
+          </div>
+          <!-- /.popular__wrapper -->
+          
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.popular -->
+
+
+    <section class="latest">
+      <div class="container">
+        <h2 class="latest__title">Последние Статьи</h2>
+        <div class="latest__info">
+          <div class="latest__text">
+            Вот чем мы занимались в последнее время.
+          </div>
+          <a href="#" class="link link--see link--">Смотреть все <i class="link__fa fa fa-arrow-right"></i></a>
+          </div>
+
+          <div class="latest__wrapper">
+
+
+            <div class="latest__card">
+              <a href="#" class="latest__articles">
+                <h3 class="latest__subtitle">Будущее Работы</h3>
+                <p class="latest__subtext latest__subtext--fs17">Большинство людей будут работать на рабочих местах, которых сегодня не существует.</p>
+                <img
+                  src="img/last-article-img-1.webp"
+                  alt="latest: article"
+                  class="latest__img"
+                />
+
+                <div class="author">
+                  <div class="author__user-info">
+                    <img class="author__avatar" src="img/user-avatar-3.webp" alt="" />
+                    <div class="author__wrapper">
+                      <span class="author__name">Lina Hicks</span>
+                      <div class="author__status">
+                        <img class="author__status-img" src="icons/check.svg" alt="" />
+                        <span class="author__status-descr"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.author__user-info -->
+                  <span class="author__date">02 May</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a href="#" class="latest__articles">
+                <h3 class="latest__subtitle">Будущее Данных</h3>
+                <p class="latest__subtext">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
+                <img
+                  src="img/last-article-img-2.webp"
+                  alt="latest: article"
+                  class="latest__img"
+                />
+
+                <div class="author">
+                  <div class="author__user-info">
+                    <img class="author__avatar" src="img/user-avatar-4.webp" alt="" />
+                    <div class="author__wrapper">
+                      <span class="author__name">Tyler Murray</span>
+                      <div class="author__status">
+                        <img class="author__status-img" src="icons/check.svg" alt="" />
+                        <span class="author__status-descr"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.author__user-info -->
+                  <span class="author__date">02 May</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a href="#" class="latest__articles">
+                <h3 class="latest__subtitle">Будущее Обучения</h3>
+                <p class="latest__subtext latest__subtext--">Постоянная способность учиться будет на самых важных <br> навыках.</p>
+                <img
+                  src="img/last-article-img-3.webp"
+                  alt="latest: article"
+                  class="latest__img"
+                />
+
+                <div class="author">
+                  <div class="author__user-info">
+                    <img class="author__avatar" src="img/user-avatar-5.webp" alt="" />
+                    <div class="author__wrapper">
+                      <span class="author__name">Warren Casey</span>
+                      <div class="author__status">
+                        <img class="author__status-img" src="icons/check.svg" alt="" />
+                        <span class="author__status-descr"
+                          >Verified writer</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.author__user-info -->
+                  <span class="author__date">02 May</span>
+                </div>
+              </a>
+            </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- /.latest -->
   </body>
 </html>
