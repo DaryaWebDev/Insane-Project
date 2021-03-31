@@ -1,0 +1,328 @@
+@media (min-width: 993px)
+  .header
+    &__btn
+      &:hover, &:active
+        background-color: white
+        color: $primary
+        transition: 0.7s all  
+        
+  .menu
+    &__hiden-item
+      &:hover
+        background: #1565D8
+        transition: 0.7s all
+    &__item
+      &-link
+        &:hover
+          color: #3780e6
+          transition: 0.5s all
+  .search
+    &__btn
+      &:hover, &:active
+        background-color: #076dfc
+        transition: 0.5s all
+    &__tag
+      &:hover, &:active
+        background-color: white
+        color: $primary
+        transition: 0.5s all
+  .practice
+    &__button
+      &:hover, &:active
+        border: 1px solid #287bf0
+        background-color: white
+        transition: 0.5s all
+        .practice
+          &__btn
+            color: #287bf0            
+            transition: 0.5s all
+
+  .link
+    &--see
+      &:hover
+        background-color: $primary
+        color: white
+        transition: 0.5s all
+    
+  .active
+    &:hover
+      background-color: #3f83e252
+      transition: 0.2s all
+  .subscribe
+    &__form
+      &-btn
+        &:hover, &:active
+          background-color: #076dfc
+          transition: 0.3s all
+  .footer
+    &__icon
+      &:hover
+        color: #fff
+    &__item
+      &-link
+        &:hover
+          color: #fff
+
+@media (max-width: 1440px)
+  .all
+    margin-bottom: 32px
+  .subscribe
+    &__container
+      margin-top: 19px
+  .header
+    max-height: 735px
+
+
+@media (max-width: 1320px)
+  .subscribe
+    &__container
+      justify-content: space-between
+    &__article
+      margin-left: 0
+      &-decor
+        &--blue
+          right: -10px
+
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .best
+    &-offer
+      max-width: 960px
+      &__title
+        line-height: 40px
+        font-size: 29px
+      &__content
+        padding: 22px 30px 30px 30px
+  .practice
+    &__swiper 
+      max-width: 960px 
+    &__button
+      width: 44px
+      height: 46px
+      &--prev
+        left: -15px
+      &--next
+        right: -15px
+    &__btn
+      display: block
+      margin-top: 2px
+      &--prev
+        margin-left: -6px
+      &--next
+        margin-left: -6px
+     
+
+    &__content
+      padding: 22px 30px 30px 30px
+    &__subtitle
+      line-height: 40px
+      font-size: 29px
+      
+  .popular
+    &__articles
+      max-width: 470px
+      max-height: 550px
+      padding: 40px 40px 40px 40px
+    &__subtitle
+      margin-bottom: 50px
+  .latest
+    &__card
+      max-width: 310px
+      max-height: 450px
+    &__articles
+      padding: 30px 30px 40px 30px
+    &__descr
+      min-height: 160px
+  .all
+    &__wrapper
+      grid-template-rows: 550px 450px 
+      grid-gap: 15px
+    &__subtitle
+      &--offer
+        margin-bottom: 50px      
+    &__articles
+      padding: 30px 30px 40px 30px
+    &__descr
+      min-height: 160px  
+  .subscribe
+    &__article
+      &-info
+        max-width: 430px
+        min-width: 350px
+      &-decor
+        &--blue
+          right: -3%
+        &--grey
+          left: -6%
+          bottom: -4%
+    &__mailing
+      max-width: 450px
+      min-width: 271px
+    &__form
+      &-input
+        min-width: 272px
+  .break
+      display: inline
+
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .search
+    &__input
+      min-width: 130px
+  .menu
+    &__item
+      &:last-child
+        margin-right: 30px
+  .best
+    &-offer
+      width: 700px
+      max-width: 700px
+      &__img
+        border-radius: 16px 16px 0 0
+        min-height: 160px
+        max-height: 350px
+        object-fit: cover
+      &__link
+        display: flex
+        flex-direction: column
+        max-height: 700px
+      &__content
+        border-radius: 0 0 16px 16px
+        width: 700px
+      &__title
+        max-width: 670px
+        min-width: 248px
+      &__descr
+        max-width: 670px
+        margin-bottom: 38px
+  .popular
+    padding-bottom: 80px
+    padding-top: 548px
+    &__title
+      text-align: center
+    &__text
+      text-align: center
+    &__articles
+      max-width: 340px
+      padding: 30px 30px 30px 30px
+  .link
+    &--after
+      display: block
+      width: 172px
+      height: 40px
+      padding: 9px 1px 9px 18px
+      margin-left: 75%
+      margin-top: 5%
+    &--hidden
+      display: none
+  .latest
+    &__wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &__card
+      margin-bottom: 16px
+      max-width: 351px
+    &__title
+      text-align: center
+    &__info
+      justify-content: center
+
+  .practice
+    padding-bottom: 60px
+    &__swiper
+      max-width: 700px
+    &__img
+      max-width: 400px
+    &__info
+      align-items: center
+    &__subtitle
+      line-height: 34px
+      font-size: 24px
+    &__subtext
+      font-size: 16px
+      line-height: 28px
+  .all
+    &__title
+      text-align: center
+    &__text
+      text-align: center
+      max-width: 700px
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 450px)
+    &__card
+      &--first
+      grid-column: 1 
+      &--second
+        grid-column: 2
+      &--third
+        grid-column: 1
+      &--fourth
+        grid-column: 2
+      &--fifth
+        grid-column: 1
+      &--sixth
+        grid-column: 2
+      &--hidden
+        display: block
+  .link
+    &--all
+      margin: 0 auto
+      margin-top: 48px
+  .offer
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px   
+
+  .hidden
+    display: inline
+  .offer
+    font-size: 14px
+    line-height: 20px
+  .subscribe
+    &__content
+      padding-bottom: 30px
+    &__title
+      font-size: 30px
+      line-height: 40px
+      text-align: center
+    &__container
+      flex-wrap: wrap
+      justify-content: center
+    &__descr
+      margin-bottom: 25px
+      text-align: center
+    &__form
+      flex-wrap: wrap
+      &-input
+        flex-basis: 100%
+        margin-bottom: 12px
+      &-btn
+        flex-basis: 100%
+        margin-left: 0
+    &__article
+      &-title
+        text-align: center
+      &-info
+        text-align: center
+      &-decor
+        &--blue
+          right: -5%
+
+  .footer
+    &__wrapper
+      flex-wrap: wrap
+    &__contacts
+      margin: 0 auto
+      order: 5
+    &__columns
+      margin-left: 0
+      margin-bottom: 47px
+
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 88%
+  
