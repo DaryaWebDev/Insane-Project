@@ -378,6 +378,11 @@
       &__content
         width: 100%
         max-width: 576px
+  .latest
+    &__card
+      max-height: 550px
+      max-width: 100%
+      width: 100%
   .popular
     &__wrapper
       flex-wrap: wrap
@@ -484,3 +489,20 @@
   .subscribe
     &__article
       display: none
+  .all
+    &__wrapper
+      grid-template-columns: repeat(1, 1fr)
+      grid-template-rows: repeat(6, 550px)
+    &__card
+      &--first
+      grid-column: 2
+      &--second
+        grid-column: 2
+      &--third
+        grid-column: 2
+      &--fourth
+        grid-column: 2
+      &--fifth
+        grid-column: 2
+      &--sixth
+        grid-column: 2
