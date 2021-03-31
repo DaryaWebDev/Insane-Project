@@ -71,6 +71,8 @@
       margin-top: 19px
   .header
     max-height: 735px
+  .popular
+    padding-top: 269px
 
 
 @media (max-width: 1320px)
@@ -93,10 +95,16 @@
         line-height: 40px
         font-size: 29px
       &__content
-        padding: 22px 30px 30px 30px
+        padding: 22px 30px 26px 26px
+      &__img
+        width: 50%
+      &__descr
+        margin-bottom: 35px
   .practice
     &__swiper 
-      max-width: 960px 
+      max-width: 960px
+    &__img
+      width: 50% 
     &__button
       width: 44px
       height: 46px
@@ -184,6 +192,7 @@
         min-height: 160px
         max-height: 350px
         object-fit: cover
+        width: 100%
       &__link
         display: flex
         flex-direction: column
@@ -233,16 +242,31 @@
     padding-bottom: 60px
     &__swiper
       max-width: 700px
+      min-height: 448px
+      height: 737px
     &__img
-      max-width: 400px
+      // max-width: 400px
+      // max-height: 500px
+      border-radius: 16px 16px 0 0
+    &__content
+      border-radius:  0 0 16px 16px
+      width: 700px
+      height: 355px
     &__info
       align-items: center
     &__subtitle
-      line-height: 34px
-      font-size: 24px
+      line-height: 40px
+      font-size: 29px
     &__subtext
       font-size: 16px
       line-height: 28px
+    &__item
+      flex-wrap: wrap
+    &__img
+      max-width: 700px
+      width: 700px
+    &__button      
+      top: 48%
   .all
     &__title
       text-align: center
@@ -316,13 +340,147 @@
       flex-wrap: wrap
     &__contacts
       margin: 0 auto
+      text-align: center
       order: 5
     &__columns
       margin-left: 0
       margin-bottom: 47px
+    &__logo
+      margin-left: 30%
+    &__icon
+      margin-right: 0
+    &__icons
+      justify-content: space-between
+      
 
 @media (max-width: 767px)
   .container
     max-width: 576px
-    width: 88%
+    width: 90%
+  .header
+    &__wrapper
+      display: none
+  .search
+    &__tags
+      flex-wrap: wrap
+    &__tag
+      margin-bottom: 11px
+    &__text
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+  .best
+    &-offer
+      max-width: 100%
+      width: 100%
+      &__link
+        width: 100%
+      &__content
+        width: 100%
+        max-width: 576px
+  .popular
+    &__wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &__card
+      margin-bottom: 16px
+    &__articles
+      max-width: 576px
+      width: 100%
+  .link
+    &--popular
+      margin: 0 auto
+      margin-top: 5%
+  .practice
+    &__swiper
+      width: 100%
+      max-width: 576px
+    &__content
+      width: 100%
+      max-width: 576px
+      min-height: 288px
+      height: 330px
+    &__subtext
+      margin-bottom: 24px
+  .all
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: 550px 550px 450px 450px
+    &__card
+      &--first
+      grid-column: 1 / 3
+      &--second
+        grid-column: 1 / 3
+      &--third
+        grid-column: 1 / 2
+      &--fourth
+        grid-column: 2 / 3
+      &--fifth
+        grid-column: 1 / 2
+      &--sixth
+        grid-column: 2 / 3
+    &__descr
+      min-height: 190px
+  .subscribe
+    &__form
+      margin-bottom: 0
+
+  // .footer
+  //   &__columns
+  //     justify-content: center
+  //     flex-wrap: wrap
+  //   &__column
+  //     min-width: 102px
+  //     margin-left: 0
+  //     flex-basis: 100%
+  //     max-width: 288px
+  //     margin-bottom: 39px
+  //     &:nth-child(4)
+  //       margin-left: 0
+
+  .footer
+    &__wrapper
+    &__columns
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: 300px 300px
+      grid-gap: 45px
+      margin: 0 auto
+    &__column
+      margin-left: 0
+      min-width: 102px
+
   
+  .header-top
+    &--button
+      cursor: pointer
+      outline: none
+
+  .menu
+      &-button
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        width: 22px
+        height: 17.7px
+        border: none
+        background-color: transparent
+        cursor: pointer
+        &__line
+         
+          width: 22px
+          height: 2.2px
+          background-color: #fff
+
+
+
+
+@media (max-width: 576px)
+  .header
+    &__logo
+      width: 77px
+      height: 24px
+  .subscribe
+    &__article
+      display: none
