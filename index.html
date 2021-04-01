@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Отдел новостей</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <script src="https://use.fontawesome.com/e476915286.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -16,7 +18,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <div class="header__top">
           <a href="#" class="logo header__logo">
             <img src="icons/Logo.svg" alt="logo" />
@@ -78,7 +80,7 @@
           <div class="search header__search">
             <div class="search__form">
               <div class="search__input-wrapper">
-                <i class="fa fa-search"></i>
+                <i class="fa fa-search fa--mt"></i>
                 <input
                   class="search__input"
                   placeholder="Поиск постов"
@@ -121,7 +123,7 @@
                       <span class="author__name author__name--g"
                         >Viola Manisa</span
                       >
-                      <div class="author__status">
+                      <div class="author__status author__status--w98">
                         <img
                           class="author__status-img"
                           src="icons/check.svg"
@@ -153,7 +155,7 @@
         <div class="popular__info">
           <div class="popular__text">
             Мы делимся общими тенденциями, стратегическими идеями, мнениями,
-            короткими и длинными историями команды, стоящей за компанией.
+            короткими и длинными <span class="popular__span popular__span--ml10">историями</span> команды, стоящей за компанией.
           </div>
           <a href="#" class="link link--see link--popular link--hidden"
             >Смотреть все <i class="link__fa link__fa--popular fa fa-arrow-right"></i
@@ -181,7 +183,7 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Viola Manisa</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w98">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
@@ -217,7 +219,7 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Joshua William</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w98">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
@@ -246,7 +248,7 @@
 
     <section class="latest">
       <div class="container">
-        <h2 class="latest__title">Последние Статьи</h2>
+        <h2 class="latest__title">Последние <span class="lowercase">С</span>татьи</h2>
         <div class="latest__info">
           <div class="latest__text">
             Вот чем мы занимались в последнее время.
@@ -260,7 +262,7 @@
           <div class="latest__card active">
             <a href="#" class="latest__articles">
               <div class="latest__descr">
-                <h3 class="latest__subtitle">Будущее Работы</h3>
+                <h3 class="latest__subtitle">Будущее <span class="lowercase">Р</span>аботы</h3>
                 <p class="latest__subtext latest__subtext--fs17">
                   Большинство людей будут работать на рабочих местах, которых
                   сегодня не существует.
@@ -282,7 +284,7 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Lina Hicks</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w98">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
@@ -301,7 +303,7 @@
           <div class="latest__card active">
             <a href="#" class="latest__articles">
               <div class="latest__descr">
-                <h3 class="latest__subtitle">Будущее Данных</h3>
+                <h3 class="latest__subtitle">Будущее <span class="lowercase">Д</span>анных</h3>
                 <p class="latest__subtext">
                   Благодаря нескончаемым объемам данных и количеству инсайтов
                 </p>
@@ -321,7 +323,7 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Tyler Murray</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w98">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
@@ -337,10 +339,10 @@
             </a>
           </div>
 
-          <div class="latest__card active">
+          <div class="latest__card active latest__card--hidden">
             <a href="#" class="latest__articles">
               <div class="latest__descr">
-                <h3 class="latest__subtitle">Будущее Обучения</h3>
+                <h3 class="latest__subtitle">Будущее <span class="lowercase">О</span>бучения</h3>
                 <p class="latest__subtext">
                   Постоянная способность учиться будет на самых важных <span class="break">навыках.</span>
                   
@@ -355,13 +357,19 @@
               <div class="author">
                 <div class="author__user-info">
                   <img
-                    class="author__avatar"
+                    class="author__avatar author__avatar--visible"
                     src="img/user-avatar-5.webp"
                     alt="Author avatar"
                   />
+                  <img
+                    class="author__avatar author__avatar--hidden"
+                    src="img/user-avatar-4.webp"
+                    alt="Author avatar"
+                  />
+
                   <div class="author__wrapper">
-                    <span class="author__name">Warren Casey</span>
-                    <div class="author__status">
+                    <span class="author__name author__name--visible">Warren Casey</span><span class="author__name author__name--hidden">Tyler Murray</span>
+                    <div class="author__status author__status--w98">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
@@ -377,7 +385,7 @@
             </a>
           </div>
         </div>
-        <a href="#" class="link link--see link--popular link--after"
+        <a href="#" class="link link--see link--latest link--after"
             >Смотреть все <i class="link__fa link__fa--popular fa fa-arrow-right"></i
           ></a>
       </div>
@@ -389,7 +397,7 @@
         <div class="practice__info">
           <h2 class="practice__title">Примеры из практики</h2>
           <div class="practice__text">
-            Вот чем мы занимались в последнее время.
+            Вот чем мы занимались в последнее <span class="practice__span practice__span--ml3">время.</span>
           </div>
           <a href="#" class="link link--see link--practice link--hidden">Смотреть все <i class="link__fa link__fa--practice fa fa-arrow-right"></i></a>
         </div>        
@@ -402,7 +410,8 @@
 
               <div class="practice__slide swiper-slide">
                 <a href="#" class="practice__item">          
-                  <img class="practice__img" src="img/practices-1.webp" alt="image: offer">                  
+                  <img class="practice__img practice__img--visible" src="img/practices-1.webp" alt="image: offer">
+                  <img class="practice__img practice__img--hidden" src="img/promo-img.webp" alt="image: offer">                                    
                   <div class="practice__content">
                   <span class="practice__offer">Предложения</span>
                   <h3 class="practice__subtitle">Дешевые Авиабилеты - Отличный Способ Сэкономить</h3>
@@ -411,19 +420,19 @@
                   <div class="author">
                 <div class="author__user-info">
                   <img
-                    class="author__avatar author__avatar--mt"
+                    class="author__avatar author__avatar--mt author__avatar--mr5"
                     src="img/user-avatar-1.webp"
                     alt="Author avatar"
                   />
                   <div class="author__wrapper">
                     <span class="author__name author__name--g">Viola Manisa</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--practice">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
                         alt="icon: status confirmed"
                       />
-                      <span class="author__status-descr">Verified writer</span>
+                      <span class="author__status-descr">Verified <span class="customer customer--hidden">customer</span><span class="writer writer--hidden">writer</span></span>
                     </div>
                   </div>
                 </div>
@@ -508,7 +517,7 @@
           <button class="practice__button practice__button--prev"><i class="fa fa-arrow-left practice__btn practice__btn--prev"></i></button>
           <button class="practice__button practice__button--next"><i class="fa fa-arrow-right practice__btn practice__btn--next"></i></button>
         </div>
-        <a href="#" class="link link--see link--popular link--after"
+        <a href="#" class="link link--see link--popular link--mt20 link--after"
             >Смотреть все <i class="link__fa link__fa--popular fa fa-arrow-right"></i
           ></a>
         
@@ -521,7 +530,7 @@
       <div class="container">
         <div class="all__wrap">
         <div class="all__info">
-          <h2 class="all__title">Все Статьи</h2>
+          <h2 class="all__title">Все <span class="lowercase">С</span>татьи</h2>
           <div class="all__text">Мы делимся общими тенденциями, стратегическими идеями, мнениями, короткими и длинными историями команды, стоящей  <span class="hidden">за компанией.</span>
           </div>
         </div>
@@ -530,7 +539,7 @@
           <div class="all__card all__card--offer all__card--first active">
             <a href="#" class="all__articles">
               <span class="offer offer--main offer--all">Предложения</span>
-              <h3 class="all__subtitle all__subtitle--offer">
+              <h3 class="all__subtitle all__subtitle--offer all__subtitle--mb48">
                 Как защитить свою семью от угарного газа
               </h3>
               <img
@@ -548,13 +557,13 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Viola Manisa</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w116">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
                         alt="icon: status confirmed"
                       />
-                      <span class="author__status-descr">Verified writer</span>
+                      <span class="author__status-descr">Verified <span class="customer customer--hidden">customer</span><span class="writer writer--hidden">writer</span></span>
                     </div>
                   </div>
                 </div>
@@ -566,7 +575,7 @@
 
           <div class="all__card all__card--offer all__card--second active">
             <a href="#" class="all__articles">
-              <span class="offer offer--main offer--all">Предложения</span>
+              <span class="offer offer--main offer--all offer--all--t25">Предложения</span>
               <h3 class="all__subtitle all__subtitle--offer all__subtitle--mb33">
                 Материнство - самая трудная и лучшая работа на свете
               </h3>
@@ -585,13 +594,13 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Joshua William</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w116">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
                         alt="icon: status confirmed"
                       />
-                      <span class="author__status-descr">Verified writer</span>
+                      <span class="author__status-descr">Verified <span class="customer customer--hidden">customer</span><span class="writer writer--hidden">writer</span></span>
                     </div>
                   </div>
                 </div>
@@ -604,7 +613,7 @@
           <div class="all__card all__card--wtext all__card--third active">
             <a href="#" class="all__articles all__articles--wtext">
               <div class="all__descr">
-                <h3 class="all__subtitle all__subtitle--wtext">Будущее Работы</h3>
+                <h3 class="all__subtitle all__subtitle--wtext">Будущее <span class="lowercase">Р</span>аботы</h3>
                 <p class="all__subtext all__subtext--fs17">
                   Большинство людей будут работать на рабочих местах, которых
                   сегодня не существует.
@@ -626,13 +635,13 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Lina Hicks</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w116">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
                         alt="icon: status confirmed"
                       />
-                      <span class="author__status-descr">Verified writer</span>
+                      <span class="author__status-descr">Verified <span class="customer customer--hidden">customer</span><span class="writer writer--hidden">writer</span></span>
                     </div>
                   </div>
                 </div>
@@ -645,7 +654,7 @@
           <div class="all__card all__card--wtext all__card--fourth active">
             <a href="#" class="all__articles all__articles--wtext">
               <div class="all__descr">
-                <h3 class="all__subtitle all__subtitle--wtext">Будущее Данных</h3>
+                <h3 class="all__subtitle all__subtitle--wtext">Будущее <span class="lowercase">Д</span>анных</h3>
                 <p class="all__subtext">
                   Благодаря нескончаемым объемам данных и количеству инсайтов
                 </p>
@@ -653,25 +662,36 @@
               <img
                 src="img/all-articles-img-4.webp"
                 alt="all: article"
-                class="all__img"
+                class="all__img all__img--visible"
+              />
+              <img
+                src="img/all-articles-img-3.webp"
+                alt="all: article"
+                class="all__img all__img--hidden"
               />
 
               <div class="author">
                 <div class="author__user-info">
                   <img
-                    class="author__avatar"
+                    class="author__avatar author__avatar--visible"
                     src="img/user-avatar-4.webp"
+                    alt="Author avatar"
+                  />
+                  <img
+                    class="author__avatar author__avatar--hidden"
+                    src="img/user-avatar-3.webp"
                     alt="Author avatar"
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Tyler Murray</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w116">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
                         alt="icon: status confirmed"
                       />
-                      <span class="author__status-descr">Verified writer</span>
+                      
+                      <span class="author__status-descr">Verified <span class="customer customer--hidden">customer</span><span class="writer writer--hidden">writer</span></span>
                     </div>
                   </div>
                 </div>
@@ -684,7 +704,7 @@
           <div class="all__card all__card--wtext all__card--fifth active">
             <a href="#" class="all__articles all__articles--wtext">
               <div class="all__descr">
-                <h3 class="all__subtitle all__subtitle--wtext">Будущее Обучения</h3>
+                <h3 class="all__subtitle all__subtitle--wtext">Будущее <span class="lowercase">О</span>бучения</h3>
                 <p class="all__subtext">
                   Постоянная способность учиться будет на самых важных <span class="break">навыках.</span>
                 </p>
@@ -692,25 +712,35 @@
               <img
                 src="img/all-articles-img-5.webp"
                 alt="all: article"
-                class="all__img"
+                class="all__img all__img--visible"
+              />
+              <img
+                src="img/all-articles-img-4.webp"
+                alt="all: article"
+                class="all__img all__img--hidden"
               />
 
               <div class="author">
                 <div class="author__user-info">
                   <img
-                    class="author__avatar"
+                    class="author__avatar author__avatar--visible"
                     src="img/user-avatar-5.webp"
                     alt="Author avatar"
                   />
+                  <img
+                    class="author__avatar author__avatar--hidden"
+                    src="img/user-avatar-4.webp"
+                    alt="Author avatar"
+                  />
                   <div class="author__wrapper">
-                    <span class="author__name">Warren Casey</span>
-                    <div class="author__status">
+                    <span class="author__name author__name--visible">Warren Casey</span><span class="author__name author__name--hidden">Tyler Murray</span>
+                    <div class="author__status author__status--w116">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
                         alt="icon: status confirmed"
                       />
-                      <span class="author__status-descr">Verified writer</span>
+                      <span class="author__status-descr">Verified <span class="customer customer--hidden">customer</span><span class="writer writer--hidden">writer</span></span>
                     </div>
                   </div>
                 </div>
@@ -723,7 +753,7 @@
           <div class="all__card all__card--wtext all__card--hidden all__card--sixth active">
             <a href="#" class="all__articles all__articles--wtext">
               <div class="all__descr">
-                <h3 class="all__subtitle all__subtitle--wtext">Будущее Обучения</h3>
+                <h3 class="all__subtitle all__subtitle--wtext">Будущее <span class="lowercase">О</span>бучения</h3>
                 <p class="all__subtext">
                   Постоянная способность учиться будет на самых важных <span class="break">навыках.</span>
                   
@@ -732,7 +762,12 @@
               <img
                 src="img/all-articles-img-5.webp"
                 alt="all: article"
-                class="all__img"
+                class="all__img all__img--visible"
+              />
+              <img
+                src="img/all-articles-img-4.webp"
+                alt="all: article"
+                class="all__img all__img--hidden"
               />
 
               <div class="author">
@@ -744,13 +779,13 @@
                   />
                   <div class="author__wrapper">
                     <span class="author__name">Warren Casey</span>
-                    <div class="author__status">
+                    <div class="author__status author__status--w116">
                       <img
                         class="author__status-img"
                         src="icons/check.svg"
                         alt="icon: status confirmed"
                       />
-                      <span class="author__status-descr">Verified writer</span>
+                      <span class="author__status-descr">Verified <span class="customer customer--hidden">customer</span><span class="writer writer--hidden">writer</span></span>
                     </div>
                   </div>
                 </div>
@@ -760,7 +795,8 @@
             </a>
           </div>
         </div>
-        <a href="#" class="link link--see link--all">Больше постов <i class="link__fa link__fa--all fa fa-arrow-right"></i></a>
+        <a href="#" class="link link--see link--all link--more">Больше постов <i class="link__fa link__fa--all fa fa-arrow-right"></i></a>
+        <a href="#" class="link link--see link--seeall">Смотреть все <i class="link__fa link__fa--all fa fa-arrow-right"></i></a>
         </div>
         <!-- /.all__wrapper -->
       </div>
@@ -773,7 +809,7 @@
         <div class="container subscribe__container">
           <div class="subscribe__mailing">
             <h2 class="subscribe__title">
-              Получите наши истории на ваш почтовый ящик еженедельно.
+              <span class="subscribe__span subscribe__span--visible">Получите</span><span class="subscribe__span subscribe__span--hidden">Получайте</span> наши истории на ваш почтовый ящик еженедельно.
             </h2>
             <div class="subscribe__form">
               <input
@@ -861,18 +897,18 @@
               <ul class="footer__items ">
                 <li class="footer__item"><a class="footer__item-link" href="#">О нас</a></li>
                 <li class="footer__item"><a class="footer__item-link" href="#">Условия</a></li>
-                <li class="footer__item footer__item--policy "><a class="footer__item-link" href="#">Политика 
-  конфиденциальности</a></li>
+                <li class="footer__item footer__item--policy "><a class="footer__item-link" href="#"><span class="footer__policy footer__policy--visible">Политика конфиденциальности</span>
+                  <span class="footer__policy footer__policy--hidden">Privacy Policy</span></a></li>
                 <li class="footer__item"><a class="footer__item-link" href="#">Careers</a></li>
               </ul>
             </div> 
             
             <div class="footer__column">
-              <h3 class="footer__title">Более</h3>
+              <h3 class="footer__title"><span class="footer__more footer__more--visible">Более</span><span class="footer__more footer__more--hidden">Ещё..</span></h3>
               <ul class="footer__items">
                 <li class="footer__item"><a class="footer__item-link" href="#">Документация</a></li>
                 <li class="footer__item"><a class="footer__item-link" href="#">Лицензия</a></li>
-                <li class="footer__item"><a class="footer__item-link" href="#">Измененния</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="#">Измене<span class="footer__change footer__change--hidden">н</span>ния</a></li>
               </ul>
             </div> 
           </div>

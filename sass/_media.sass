@@ -131,7 +131,7 @@
     &__articles
       max-width: 470px
       max-height: 550px
-      padding: 40px 40px 40px 40px
+      //padding: 40px 40px 40px 40px
     &__subtitle
       margin-bottom: 50px
   .latest
@@ -211,11 +211,15 @@
     padding-top: 548px
     &__title
       text-align: center
+    &__subtitle 
+      max-width: 290px
+      font-size: 32px
+      line-height: 44px
     &__text
       text-align: center
     &__articles
       max-width: 340px
-      padding: 30px 30px 30px 30px
+      padding: 60px 30px 30px 30px
   .link
     &--after
       display: block
@@ -229,21 +233,28 @@
   .latest
     &__wrapper
       flex-wrap: wrap
-      justify-content: center
+      justify-content: space-between
+      //justify-content: center
     &__card
       margin-bottom: 16px
-      max-width: 351px
+      max-width: 340px
+      //max-width: 361px
+      &--hidden
+        display: none
+        
     &__title
       text-align: center
     &__info
       justify-content: center
+    &__text
+      text-align: center
 
   .practice
     padding-bottom: 60px
     &__swiper
       max-width: 700px
       min-height: 448px
-      height: 737px
+      height: 99%
     &__img
       // max-width: 400px
       // max-height: 500px
@@ -273,6 +284,10 @@
     &__text
       text-align: center
       max-width: 700px
+    &__subtitle
+      max-width: 310px
+      font-size: 32px
+      line-height: 44px
     &__wrapper
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: repeat(3, 450px)
@@ -369,6 +384,9 @@
       font-weight: 600
       font-size: 14px
       line-height: 20px
+      margin-bottom: 10px
+    &__wrapper
+      flex-wrap: wrap
   .best
     &-offer
       max-width: 100%
@@ -381,18 +399,31 @@
   .latest
     &__card
       max-height: 550px
-      max-width: 100%
+      max-width: 576px
       width: 100%
+      &--hidden
+        display: block
+    &__descr
+      max-width: 100%
+    &__subtext
+      max-width: 100%
   .popular
     &__wrapper
       flex-wrap: wrap
       justify-content: center
     &__card
       margin-bottom: 16px
+      max-width: 576px
+      width: 100%
     &__articles
       max-width: 576px
       width: 100%
+    &__subtitle
+      max-width: 100%
   .link
+    &--latest
+      margin: 0 auto
+      margin-top: 5%
     &--popular
       margin: 0 auto
       margin-top: 5%
@@ -407,42 +438,40 @@
       height: 330px
     &__subtext
       margin-bottom: 24px
+    &__img
+      width: 100%
   .all
     &__wrapper
-      grid-template-columns: repeat(2, 1fr)
-      grid-template-rows: 550px 550px 450px 450px
+      grid-template-columns: repeat(1, 1fr)
+      grid-template-rows: 550px 550px 500px 500px 500px 500px
     &__card
       &--first
-      grid-column: 1 / 3
+      grid-column: 1
       &--second
-        grid-column: 1 / 3
+        grid-column: 1 
       &--third
-        grid-column: 1 / 2
+        grid-column: 1 
       &--fourth
-        grid-column: 2 / 3
+        grid-column: 1 
       &--fifth
-        grid-column: 1 / 2
+        grid-column: 1 
       &--sixth
-        grid-column: 2 / 3
+        grid-column: 1 
     &__descr
-      min-height: 190px
+      min-height: 100px
+      width: 100%
+    &__subtext
+      width: 100%
+      max-width: 100%
+    &__subtitle
+      max-width: 100%
+    &__articles
+      max-width: 576px
+      width: 100%
+      padding-top: 60px
   .subscribe
     &__form
       margin-bottom: 0
-
-  // .footer
-  //   &__columns
-  //     justify-content: center
-  //     flex-wrap: wrap
-  //   &__column
-  //     min-width: 102px
-  //     margin-left: 0
-  //     flex-basis: 100%
-  //     max-width: 288px
-  //     margin-bottom: 39px
-  //     &:nth-child(4)
-  //       margin-left: 0
-
   .footer
     &__wrapper
     &__columns
@@ -453,14 +482,11 @@
       margin: 0 auto
     &__column
       margin-left: 0
-      min-width: 102px
-
-  
+      min-width: 102px  
   .header-top
     &--button
       cursor: pointer
       outline: none
-
   .menu
       &-button
         display: flex
@@ -472,20 +498,97 @@
         border: none
         background-color: transparent
         cursor: pointer
-        &__line
-         
+        &__line         
           width: 22px
           height: 2.2px
           background-color: #fff
-
-
-
 
 @media (max-width: 576px)
   .header
     &__logo
       width: 77px
       height: 24px
+    &__title
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+
+  .best-offer
+    &__tag
+      text-transform: uppercase
+    &__content
+      height: 310px
+
+  .best-offer
+    &__title
+      font-size: 20px
+      line-height: 24px
+    &__descr
+      font-size: 14px
+      line-height: 24px
+  .practice
+    &__subtitle
+      font-size: 20px
+      line-height: 24px
+    &__subtext
+      font-size: 14px
+      line-height: 24px
+    &__content
+      height: 312px
+    &__swiper
+      max-height: 660px
+      min-height: 448px
+      
+    
+
+  .author
+    &__name
+      font-size: 14px
+      line-height: 20px
+    &__status
+      &-descr
+        font-size: 12px
+        line-height: 16px
+    &__date
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+  .search
+    &__form
+      position: relative
+      margin-bottom: 74px
+      min-height: 48px
+      max-height: 48px
+    &__btn
+      position: absolute
+      top: 68px
+      left: 0
+      width: 100%
+      height: 48px
+  .popular
+    padding-top: 571px
+    
+  .popular, .latest, .practice, .all
+    &__title
+      font-size: 24px
+      line-height: 32px
+  .popular, .latest, .practice, .all
+    &__text
+      font-weight: normal
+      font-size: 16px
+      line-height: 30px
+  .popular, .latest, .all, 
+    &__subtitle      
+      font-size: 25px
+      line-height: 32px
+  .latest, .all
+    &__subtext
+      font-size: 16px
+      line-height: 21px
+
+  
+
+
   .subscribe
     &__article
       display: none
@@ -506,3 +609,379 @@
         grid-column: 2
       &--sixth
         grid-column: 2
+
+
+@media (max-width: 320px)
+  .container
+    width: 90%
+  .header
+    padding-top: 8px
+    max-height: 482px
+    &__top
+      margin-bottom: 60px
+      margin-left: 8px
+      margin-right: 7px
+    &__title
+      margin-bottom: 30px
+    &__search
+      margin-bottom: 24px
+      margin-left: 8px
+      margin-right: 8px
+    &__wave
+      &-img
+        display: none
+  .search
+    &__input
+      margin-left: 9px
+    &__btn
+      top: 60px
+    &__form
+      margin-bottom: 72px
+      padding: 2px 8px 5px 12px
+    &__tag
+      &:nth-child(1)
+        margin-right: 10px
+  .fa
+    &--mt
+      margin-left: 2px
+      margin-top: 5px
+  .best-offer
+    &__img
+      max-height: 160px
+    &__content
+      padding: 18px 20px 26px 19px
+      height: 288px
+    &__tag
+      margin-bottom: 3px
+      padding: 7px 11.5px
+    &__title
+      margin-bottom: 0
+    &__descr
+      margin-bottom: 24px
+  .author
+    &__avatar
+      width: 36px
+      height: 36px
+      &--mr5
+        margin-right: 14px
+    &__status
+      &--practice
+        width: 116px
+  .writer
+    &--hidden
+      display: none
+  .customer
+    &--hidden
+      display: inline-block
+
+
+    &__status
+      justify-content: flex-start
+      &-img
+        margin-right: 6px
+  .popular
+    padding-top: 453px
+    padding-bottom: 67px
+    &__title
+      margin-bottom: 12px
+    &__info
+      margin-bottom: 32px
+    &__articles
+      padding: 27px 20px 22px 20px
+    &__subtitle
+      margin-bottom: 46px
+      &--mb36
+        margin-bottom: 5px
+        margin-left: 0
+    &__span
+      &--ml10
+        margin-left: -6px
+
+  .offer
+    &--main
+      top: 20px
+      left: 20px
+      font-size: 14px
+      line-height: 20px
+      padding: 2px 8px
+  .link
+    &--after
+      margin-top: 16px
+      padding: 7px 1px 9px 16px
+    &--latest
+      margin-top: 28px
+      margin-left: 19%
+    &--mt20
+      margin-top: 26px
+      margin-left: 18%
+    &--more
+      display: none
+    &--seeall
+      display: block;
+      padding: 7px 15px 13px 13px
+      text-align: center
+      width: 173px
+      height: 39px
+      margin: 0 auto
+      margin-top: 33px
+      margin-left: 55px
+
+
+      
+
+      
+
+  .latest
+    padding-bottom: 44px
+    &__title
+      margin-bottom: 2px
+    &__text
+      font-size: 14px
+      line-height: 24px   
+    &__info
+      margin-bottom: 6px 
+    &__articles
+      padding: 29px 20px 19px 20px
+    &__subtext
+      margin-bottom: 1px
+      height: 60px
+      min-height: 67px
+    &__descr
+      min-height: 95px
+      margin-top: 0
+    &__subtitle
+      margin-bottom: 8px   
+  
+  .practice
+    padding-bottom: 43px
+    &__title
+      margin-left: -4px 
+      margin-bottom: 12px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+    &__info
+      margin-bottom: 9px
+    &__img
+      max-height: 160px
+    &__content
+      height: 288px
+      padding: 23px 19px 24px 17px
+    &__subtitle
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 0
+    &__subtext
+      font-size: 14px
+      line-height: 24px
+      margin-left: 2px
+    &__offer
+      font-size: 14px
+      line-height: 20px
+      text-transform: uppercase
+      margin-bottom: 8px
+      background-color: rgba(21, 101, 216, 0.1)
+      padding: 1px 18.5px
+    &__button
+      top: 31%
+      width: 39px
+      height: 40px
+      &--next
+        right: -9px
+      &--prev
+        left: -9px
+    &__btn
+      margin-top: 0
+      &--prev
+        margin-left: -7px
+      &--next
+        margin-left: -7px
+    &__span
+      &--ml3
+        margin-left: -8px
+    &__img
+      &--visible
+        display: none
+      &--hidden
+        display: block
+
+  .all
+    margin-bottom: 64px
+    &__title
+      margin-right: 9px
+      margin-bottom: 12px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      margin-left: -9px
+      margin-bottom: 26px
+    &__wrapper
+      grid-template-rows: repeat(6, 320px)
+      grid-row-gap: 16px
+      grid-column-gap: 0
+    &__articles
+      padding: 34px 20px 19px 20px
+    &__subtitle
+      &--wtext
+        margin-bottom: 8px
+      &--mb48
+        margin-bottom: 48px
+      &--mb33
+        margin-bottom: 0
+    &__subtext
+      min-height: 60px
+      height: 60px
+    &__descr
+      min-height: 95px
+    &__img
+      &--hidden
+        display: block        
+      &--visiible
+        display: none
+
+  .offer
+    &--all
+      top: 23px
+      left: 18px
+      &--t25
+        top: 25px
+        left: 20px
+    
+  .popular
+    &__text      
+      font-size: 11px
+      line-height: 24px
+
+  .popular
+    &__articles
+      height: 320px
+  .latest
+    &__card
+      height: 320px
+  
+  .latest, .all, .popular
+    &__subtitle
+      font-size: 20px
+      line-height: 24px
+    &__subtext
+      font-size: 14px
+      line-height: 24px
+  .latest
+    &__subtext
+      &--fs17
+        line-height: 21px
+        
+  .lowercase
+      text-transform: lowercase         
+  .header-top
+    &--button
+      margin-top: 15px
+      margin-right: 2px
+  .author
+    &__status
+      &--w98
+        width: 98px
+      &--w116
+        width: 116px
+    &__name
+      &--hidden
+        display: inline-block
+      &--visible
+        display: none
+    &__avatar
+      &--visible
+        display: none
+      &--hidden
+        display: inline-block
+  .all
+    &__subtext
+      &--fs17
+        line-height: 21px
+
+  .subscribe
+    &__title
+      font-size: 24px
+      line-height: 32px
+      text-align: left
+      max-width: 226px
+      margin-bottom: 8px
+    &__mailing
+      margin-top: 28px
+      margin-left: 9px
+    &__span
+      &--visible
+        display: none
+      &--hidden
+        display: inline
+    &__form
+      &-input
+        height: 48px
+        min-width: 95%
+        flex-basis: 97%
+      &-btn
+        min-height: 48px
+        height: 48px
+        flex-basis: 97%
+        font-size: 16px
+        line-height: 22px
+        padding: 14px 48px 15px 49px
+    &__descr
+      font-size: 14px
+      line-height: 27px
+      text-align: left
+
+  .footer
+    padding-bottom: 1px
+    padding-top: 32px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 18px
+    &__columns
+      margin-left: 8px
+      grid-column-gap: 42px
+      grid-row-gap: 9px
+      grid-template-rows: 232px 202px
+      margin-bottom: 11px
+    &__item
+      margin-bottom: 13px
+      &-link
+        font-size: 14px
+        line-height: 20px
+    &__policy
+      &--visible
+        display: none
+      &--hidden
+        display: inline-block
+    &__column
+      &:nth-child(4)
+        margin-left: 0
+    &__more
+      &--visible
+        display: none
+      &--hidden
+        display: inline-block
+    &__logo
+      width: 77px
+      height: 24px
+      margin-left: 36%
+      margin-bottom: 17px
+    &__descr
+      font-size: 14px
+      line-height: 28px
+      max-width: 264px
+      margin-right: 10px
+      margin-bottom: 24px
+    &__icons
+      max-width: 181px
+      margin: 0 auto
+    &__copyring
+      display: none
+    &__change
+      &--hidden
+        display: none
+
+        
+
+
