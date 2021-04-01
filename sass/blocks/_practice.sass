@@ -48,6 +48,8 @@
     max-height: 381px
     border-radius: 16px 0 0 16px 
     object-fit: cover
+    &--hidden
+      display: none
   &__subtitle
     font-size: 31px
     line-height: 48px
@@ -95,14 +97,18 @@
 .link
   &--practice
     padding: 13px 15px 13px 22px
-    width: 183px
-    height: 48px
+    min-width: 183px
+    margin-bottom: -5px
+    //height: 48px
     position: absolute
     right: -1px
     bottom: 1px
   &__fa
     &--practice
       margin-left: 8px
+.customer
+  &--hidden
+    display: none
 
   
   

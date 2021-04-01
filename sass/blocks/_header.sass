@@ -27,9 +27,7 @@
   &__menu
     margin-top: 12px
   &__btn
-    padding: 13px 24.77px
-    width: 131px
-    height: 48px
+    padding: 12px 22.77px
     display: inline-block
     color: #fff
     border: 1px solid #fff
@@ -41,6 +39,9 @@
     text-align: center
     font-weight: 700
     cursor: pointer
+    max-width: 200px
+    //max-height: 50px
+    
     // &:hover, &:active
     //   background-color: white
     //   color: $primary
@@ -111,6 +112,9 @@
     margin-bottom: 10px
     display: block
   &__input
+    margin-top: 8px
+    margin-bottom: 10px
+    display: block
     font-family: "Open Sans", sans-serif
     margin-left: 11px
     border: none
@@ -118,10 +122,16 @@
     font-size: 16px
     line-height: 22px
     font-weight: 600
-    min-width: 600px
+    // max-width: 500px
+    // min-width: 200px
+    width: 84%
+  &__icon
+    margin-top: 13px
+    margin: auto 0
+    margin-right: 5px    
   &__btn
-    width: 94px
-    height: 40px
+    max-width: 350px
+    //height: 40px
     text-align: center
     outline: none
     cursor: pointer
@@ -133,8 +143,8 @@
     color: #fff
     line-height: 22px
     font-family: "Open Sans", sans-serif
-    // &:hover, &:active
-    //   background-color: #076dfc
+    padding: 9px 21px
+        
   &__wrapper
     display: flex
   &__text
@@ -167,16 +177,18 @@
 .best-offer
   background-color: #fff
   border-radius: 16px 
-  // position: absolute
-  //left: 50%
-  //transform: translateX(-50%)  
-   
-  // width: 1140px  
-  
+  // &__wrapper
+  //   &--scroll
+  //     min-height: 180px
+  //     max-height: 180px
+  //     overflow-y: auto
+  overflow: hidden
+
   &__link
     display: flex
+    position: relative 
   &__img
-    border-radius: 16px 0 0 16px    
+    border-radius: 16px 0 0 16px   
   &__content
     border: 1px solid #E5EAF4
     border-radius: 0 16px 16px 0

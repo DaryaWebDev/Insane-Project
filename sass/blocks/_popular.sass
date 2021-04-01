@@ -6,6 +6,7 @@
     position: relative     
     border-radius: 16px
     overflow: hidden
+    filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
     &::before
       content: ''
       position: absolute
@@ -81,14 +82,17 @@
   width: 100%
 .link
   &--popular
-    height: 48px
+    // height: 48px
     padding: 11px 17px 13px 24px
+    &--h40
+      height: 48px
   &__fa
     &--popular
       margin-right: 3px
       margin-left: 6px
   &--after
     display: none
+
 
 .break
   display: table

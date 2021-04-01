@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <script src="https://use.fontawesome.com/e476915286.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="blog-header">
+      <div class="container blog-header__container">
+        <div class="blog-header__top">
+          <a href="#" class="logo blog-header__logo">
+            <img src="icons/Logo.svg" alt="logo" />
+          </a>
+          <div class="blog-header__wrapper">
+            <nav class="menu blog-header__menu">
+              <ul class="menu__items">
+                <li class="menu__item menu__item--one">
+                  <a class="menu__item-link" href="#">Домой</a>
+                </li>
+                <li class="menu__item menu__item--two">
+                  <a class="menu__item-link" href="#"
+                    >Лендинги<i class="fa fa-angle-down"></i
+                  ></a>
+                  <ul class="menu__hiden-items">
+                    <li class="menu__hiden-item">
+                      <a href="#">Лендинг One</a>
+                    </li>
+                    <li class="menu__hiden-item">
+                      <a href="#">Лендинг Two</a>
+                    </li>
+                    <li class="menu__hiden-item">
+                      <a href="#">Лендинг Three</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__item-link" href="#"
+                    >Страницы<i class="fa fa-angle-down"></i
+                  ></a>
+                  <ul class="menu__hiden-items">
+                    <li class="menu__hiden-item">
+                      <a href="#">Страница One</a>
+                    </li>
+                    <li class="menu__hiden-item">
+                      <a href="#">Страница Two</a>
+                    </li>
+                    <li class="menu__hiden-item">
+                      <a href="#">Страница Three</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__item-link" href="#">Помощь</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="blog-header__btn">Получить</a>
+          </div>
+        </div>
+        <!-- /.header__top -->
+        <div class="blog-header__bottom">
+          <h1 class="blog-header__title">
+            Дешевые авиабилеты -
+            <span class="blog-header__title-string">
+              отличный способ сэкономить</span
+            >
+          </h1>
+          <!-- /.search -->
+        </div>
+      </div>
+      <img src="img/Wave-blog.svg" alt="" class="blog-header__wave-img" />
+    </header>
+
+    <section class="blog-posts blog-posts--ml18">
+      <div class="container blog-posts__container">
+        <aside class="blog-posts__contacts blog-posts__contacts--visible">
+          <h3 class="blog-posts__contacts-title">Share</h3>
+          <div class="blog-posts__contacts-icons">
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--twitter"
+              href="https://twitter.com/" 
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--facebook"
+              href="https://www.facebook.com/"
+              target = "_blank" rel="nofollow noopener"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--linkedin"
+              href="https://ru.linkedin.com/"
+              target = "_blank" rel="nofollow noopener"
+              ><i class="fa fa-linkedin-square"></i
+            ></a>
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--instagram"
+              href="https://www.instagram.com/"
+              target = "_blank" rel="nofollow noopener"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </div>
+        </aside>
+        <div class="blog-posts__post blog-posts__post--first">
+          <p class="blog-posts__text blog-posts__text--first">
+            Посещение выставки может быть очень эффективным методом продвижения
+            вашей компании и ее продукции. И один из наиболее эффективных
+            способов оптимизировать показ вашей выставки и увеличить
+            посещаемость вашего стенда - это использование баннерных стендов.
+          </p>
+          <div class="author blog-posts__author blog-posts__author--first">
+            <div class="author__user-info">
+              <img
+                class="author__avatar"
+                src="img/user-avatar-1.webp"
+                alt="Author avatar"
+              />
+              <div class="author__wrapper">
+                <span class="author__name author__name--g">Viola Manisa</span>
+                <div class="author__status">
+                  <img
+                    class="author__status-img"
+                    src="icons/check.svg"
+                    alt="icon: status confirmed"
+                  />
+                  <span class="author__status-descr">Verified writer</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.author__user-info -->
+            <span class="author__date author__date--post"
+              >PUBLISHED ON MAY, 2 2019</span
+            >
+          </div>
+          <div class="blog-posts__photo">
+            <img class="blog-posts__photo-img" src="img/blog-1.webp" alt="" />
+            <p class="blog-posts__photo-descr">
+              This is a caption on this photo for reference
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-posts__post blog-posts__post--second">
+          <div class="blog-posts__paragraph blog-posts__paragraph--one">
+            <h2 class="blog-posts__title blog-posts__title--big">
+              Microsoft Patch Management для домашних пользователей
+            </h2>
+            <p class="blog-posts__text">
+              В прошлом месяце моя жена Энн Доу отвезла меня в Лас-Вегас, потому
+              что ей нужно было ехать на деловой съезд. Излишне говорить, что
+              она пишет путеводитель по казино, а я ненавижу азартные игры. Но
+              ей это нравится, и это тоже поддерживает нас, так что я пошел без
+              проблем. Сначала я был подавлен, но потом, поспрашивая и
+              оглядываясь, я обнаружил, что в Лас-Вегасе повеселился больше, чем
+              я мог подумать. И нет. Пока я был там, я не заходил ни в одно
+              казино.
+            </p>
+          </div>
+          <div class="blog-posts__paragraph blog-posts__paragraph--two">
+            <h3 class="blog-posts__title blog-posts__title--two">
+              Развлекательная программа
+            </h3>
+            <p class="blog-posts__text">
+              Одно из главных достоинств Лас-Вегаса, Рино и Атлантик-Сити (но особенно Лас-Вегаса) - это количество доступных шоу. Вы можете увидеть таких комиков высшего класса, как Джей Лено, Джерри Сайнфелд, Рэй Романо, Тим Аллен и даже таких, как Билл Косби и Крис Рок. Если вы увлекаетесь музыкой, вы можете посмотреть на певиц, таких как Селин Дион, Мэрайя Кэри, Бритни Спирс, Кристина Агилера и Бейонк?, Исполнителей-мужчин, таких как Фил Коллинз, Эрик Клэптон, Snoopy Dog, и таких групп, как Oasis и Bon Jovi. Я мог бы продолжать и продолжать, но список бесконечен. Если вы увлекаетесь магией, вы можете наблюдать, как фокусники, такие как Дэвид Копперфилд, делают свои дела в нескольких метрах от вас. Все, что вам нравится, вы можете найти здесь: от западной музыки до старинных песен и джаза, рока, от Heavy Mettle до транса. Все, что вам нужно сделать, это посмотреть на маршрут, предлагаемый во время вашего визита.
+            </p>
+          </div>
+          <div class="blog-posts__paragraph blog-posts__paragraph--three">
+            <h3 class="blog-posts__title blog-posts__title--three">
+              Еда
+            </h3>
+            <p class="blog-posts__text blog-posts__text--three">
+              С китайского на японский, с корейского на еврейский, и даже с вегетарианскими и настоящими мясными заведениями, которые ждут каждого вашего удовольствия в Вегасе. Не выбирайте дешевые и жареные в масле блюда, которые подают бесплатно во время игры. Остановитесь на время и насладитесь восхитительными пейзажами и запахами восточноазиатских или европейских блюд. Что удивительно, так это то, что вы видите способность человека смешиваться. Настоящий плавильный котел, если можно так сказать.
+            </p>
+          
+          <div class="blog-posts__wrapper">
+            <div class="blog-posts__swiper swiper-container">
+
+            <div class="blog-posts__wrapper swiper-wrapper">
+              <div class="blog-posts__slide swiper-slide">                       
+                  <img class="blog-posts__image" src="img/blog-2.webp" alt="image: offer">                
+              </div>
+
+            </div>
+            
+            </div>
+          <button class="blog-posts__button blog-posts__button--prev"><i class="fa fa-arrow-left blog-posts__btn"></i></button>
+          <button class="blog-posts__button blog-posts__button--next"><i class="fa fa-arrow-right blog-posts__btn"></i></button>
+          </div>
+          <p class="blog-posts__photo-descr blog-posts__photo-descr--swiper">
+              This is a caption on this photo for reference
+          </p>
+          </div>
+        </div>
+        <div class="blog-posts__post blog-posts__post--third">
+          <div class="blog-posts__paragraph blog-posts__paragraph--four">
+            <h2 class="blog-posts__title blog-posts__title--big">
+              Достопримечательности, которые вы должны увидеть во время своего визита в Вегас:
+            </h2>
+            <p class="blog-posts__text blog-posts__text--four">
+              Плотина Гувера и Большой каньон: забронируйте себе место в любой из множества доступных обзорных экскурсий и посмотрите архитектурное чудо - плотину Гувера, построенную над Большим каньоном, которая также является грандиозным зрелищем, которое стоит увидеть отдельно. Черный каньон - еще одно место, которое нужно увидеть,<br> как и озеро Мид, которое так красиво только потому, что это водоем, окруженный пустынной природой. Река Колорадо:
+            </p>
+            <p class="blog-posts__text blog-posts__text--four">
+              Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту реки, нужно спуститься вниз. Река Колорадо отлично подходит для рафтинга и водных видов спорта, но вам не обязательно принимать участие, если это не для вас.
+            </p>
+        </div>
+        <div class="blog-posts__paragraph blog-posts__paragraph--five">
+            <h3 class="blog-posts__title blog-posts__title--five">
+              Bonnie Springs
+            </h3>
+            <p class="blog-posts__text blog-posts__text--five">
+              Кто не может устоять перед поездкой в ​​один из старых городов, подобных тем, что в западных фильмах о стрельбе из оружия? Вашим пунктом назначения должна быть Старая Невада. Там вы сможете насладиться старым западным городом прямо посреди каньона Ред-Рок. Они тоже проводят западные буллиты, так что будьте готовы, партнер! Я мог бы продолжать и рассказывать о других достопримечательностях, таких как тематический парк в Circus Circus, природный заповедник Гилкриз, заповедник для наблюдения за птицами Хендерсон и Mt. Чарльстон, но я думаю, вы поняли. 
+            </p>
+        </div>
+
+        <div class="quote blog-posts__quote">
+          <div class="quote__wrapper">
+            <i class="quote__icon fa fa-quote-left"></i>
+            <p class="quote__text">Многие люди сказали бы, что это абсолютное безумие продолжать делать одно и то же, раз за разом, ожидая получить другой результат или что-то другое случится.</p>
+            <p class="quote__descr">Даниэль принимает гостей в Джокьякарте, чтобы заработать дополнительные деньги</p>
+            <img class="quote__sponsor" src="img/sponsor-avatar.webp" alt="">
+          </div>
+        </div>
+
+        <div class="blog-posts__paragraph blog-posts__paragraph--six">
+            <p class="blog-posts__text blog-posts__text--six">
+              Плотина Гувера и Большой каньон: забронируйте себе место в любой из множества доступных обзорных экскурсий и посмотрите архитектурное чудо - плотину Гувера, построенную над Большим каньоном, которая также является грандиозным зрелищем, которое стоит увидеть отдельно. Черный каньон - еще одно место, которое нужно увидеть,<br> как и озеро Мид, которое так красиво только потому, что это водоем, окруженный пустынной природой. Река Колорадо: 
+            </p>
+            <p class="blog-posts__text blog-posts__text--six">
+              Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту реки, нужно спуститься вниз. Река Колорадо отлично подходит для рафтинга и водных видов спорта, но вам не обязательно принимать участие, если это не для вас.
+            </p>
+        </div>
+
+        <div class="gallery blog-posts__gallery">
+          <div class="gallery__wrapper">
+            <div class="gallery__inner gallery__inner--first">
+            <img src="img/blog-3.webp" alt="" class="gallery__img gallery__img "> 
+            </div>
+            <div class="gallery__inner gallery__inner--second">
+            <img src="img/blog-4.webp" alt="" class="gallery__img gallery__img">
+            </div>
+            <div class="gallery__inner gallery__inner--third">
+            <img src="img/blog-5.webp" alt="" class="gallery__img gallery__img">
+            </div>
+          </div>
+          <p class="gallery__descr">This is a caption on this photo for reference</p>
+        </div>
+        <div class="blog-posts__paragraph blog-posts__paragraph--seven">
+            <h3 class="blog-posts__title blog-posts__title--seven">
+              Bonnie Springs
+            </h3>
+            <p class="blog-posts__text blog-posts__text--seven">
+              Кто не может устоять перед поездкой в ​​один из старых городов, подобных тем, что в западных фильмах о стрельбе из оружия? Вашим пунктом назначения должна быть Старая Невада. Там вы сможете насладиться старым западным городом прямо посреди каньона Ред-Рок. Они тоже проводят западные буллиты, так что будьте готовы, партнер! Я мог бы продолжать и рассказывать о других достопримечательностях, таких как тематический парк в Circus Circus, природный заповедник Гилкриз, заповедник для наблюдения за птицами Хендерсон и Mt. Чарльстон, но я думаю, вы поняли. 
+            </p>
+            <aside class="blog-posts__contacts blog-posts__contacts--hidden">
+          <h3 class="blog-posts__contacts-title">Share</h3>
+          <div class="blog-posts__contacts-icons">
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--twitter"
+              href="https://twitter.com/" 
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--facebook"
+              href="https://www.facebook.com/"
+              target = "_blank" rel="nofollow noopener"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--linkedin"
+              href="https://ru.linkedin.com/"
+              target = "_blank" rel="nofollow noopener"
+              ><i class="fa fa-linkedin-square"></i
+            ></a>
+            <a
+              class="blog-posts__contacts-icon blog-posts__contacts-icon--instagram"
+              href="https://www.instagram.com/"
+              target = "_blank" rel="nofollow noopener"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </div>
+        </aside>
+            <hr class="blog-posts__line blog-posts__line--first">
+            <div class="author blog-posts__author blog-posts__author--second">
+              <div class="author__user-info">
+                <img
+                class="author__avatar"
+                src="img/user-avatar-1.webp"
+                alt="Author avatar"
+              />
+              <div class="author__wrapper">
+                <span class="author__name author__name--g">Viola Manisa</span>
+                <div class="author__status">
+                  <img
+                    class="author__status-img"
+                    src="icons/check.svg"
+                    alt="icon: status confirmed"
+                  />
+                  <span class="author__status-descr">Verified writer</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.author__user-info -->
+            <span class="author__date author__date--post"
+              >PUBLISHED ON MAY, 2 2019</span
+            >
+          </div>
+            <hr class="blog-posts__line">
+        </div>
+
+        <div class="comments blog-posts__comments">
+          <h3 class="comments__title">Комментарии</h3>
+          <div class="comments__wrapper">
+            <div class="comments__author">
+              <img class="comments__author-img" src="img/commentary-avatar1.webp" alt="" >
+              <div class="comments__author-info">
+                <span class="comments__author-name">Alexis Ren</span>
+                <span class="comments__author-date">02 May</span>
+              </div>
+            </div>
+            <div class="comments__content">
+              <div class="comments__content-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel met scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</div>
+            </div>
+          </div>
+          <div class="comments__wrapper comments__wrapper--second">
+            <div class="comments__author">
+              <img class="comments__author-img" src="img/commentary-avatar2.webp" alt="" >
+              <div class="comments__author-info">
+                <span class="comments__author-name">Elsie Scott</span>
+                <span class="comments__author-date">02 May</span>
+              </div>
+            </div>
+            <div class="comments__content">
+              <div class="comments__content-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </div>
+            </div>
+          </div>
+          <div class="comments__answer">            
+              <img src="img/commentary-avatar2.webp" alt="" class="comments__answer-avatar">
+              <input class="comments__answer-input"placeholder="Написать комментарий..." type="text">            
+            <button class="comments__answer-btn">Комментировать </button>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="blog-subscribe">
+      <img class="blog-subscribe__wave" src="img/Wave-subsc.svg" alt="" />
+      <div class="blog-subscribe__content">
+        <div class="container blog-subscribe__container">
+          <div class="blog-subscribe__mailing">
+            <h2 class="blog-subscribe__title">
+              Получайте наши истории на ваш почтовый ящик еженедельно.
+            </h2>
+            <div class="blog-subscribe__form">
+              <input
+                class="blog-subscribe__form-input"
+                placeholder="Ваш Email"
+                type="text"
+              />
+              <button class="blog-subscribe__form-btn">Начать</button>
+            </div>
+            <p class="blog-subscribe__descr">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <!-- /.subscribe__mailing -->
+          <div class="blog-subscribe__article">
+            <div class="blog-subscribe__article-info">
+              <img
+                class="blog-subscribe__article-img"
+                src="img/subscription.webp"
+                alt=""
+              />
+              <div class="blog-subscribe__article-text">
+                <h3 class="blog-subscribe__article-title">
+                  Лучшие статьи каждую неделю
+                </h3>
+                <p class="blog-subscribe__article-description">
+                  Наши предложения по страхованию везде одинаковы.
+                </p>
+              </div>
+            </div>
+            <div
+              class="blog-subscribe__article-decor blog-subscribe__article-decor--blue"
+            ></div>
+            <div
+              class="blog-subscribe__article-decor blog-subscribe__article-decor--grey"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- /.subscribe__content -->
+    </section>
+    <footer class="blog-footer blog-footer--ml18">
+      <div class="container blog-footer__container">
+        <div class="blog-footer__wrapper">
+          <hr class="blog-footer__hr">
+          <div class="blog-footer__contacts">
+            <a class="logo blog-footer__logo" href="#">
+              <img src="icons/Logo.svg" alt="logo" />
+            </a>
+            <p class="blog-footer__descr">
+              Создайте современный и креативный веб-сайт с crealand
+            </p>
+            <div class="blog-footer__icons">
+              <a class="blog-footer__icon blog-footer__icon--google" href="https://www.google.com/" target = "_blank" rel="nofollow noopener"
+                ><i class="fa fa-google"></i
+              ></a>
+              <a class="blog-footer__icon blog-footer__icon--twitter" href="https://twitter.com/" target = "_blank" rel="nofollow noopener"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a class="blog-footer__icon blog-footer__icon--instagram" href="https://www.instagram.com/" target = "_blank" rel="nofollow noopener"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a class="blog-footer__icon blog-footer__icon--linkedin" href="https://ru.linkedin.com/" target = "_blank" rel="nofollow noopener"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+              <a class="blog-footer__icon blog-footer__icon--youtube" href="https://www.youtube.com/" target = "_blank" rel="nofollow noopener"
+                ><i class="fa fa-youtube-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="blog-footer__columns">
+            <div class="blog-footer__column">
+              <h3 class="blog-footer__title">Продукт</h3>
+              <ul class="blog-footer__items">
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Лендинг</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Функции</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Документация</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Скидки</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Расценки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-footer__column">
+              <h3 class="blog-footer__title">Сервисы</h3>
+              <ul class="blog-footer__items">
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Документация</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Дизайн</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Темы</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Иллюстрации</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">UI Kit</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="blog-footer__column">
+              <h3 class="blog-footer__title">Компания</h3>
+              <ul class="blog-footer__items">
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">О нас</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Условия</a>
+                </li>
+                <li class="blog-footer__item blog-footer__item--policy">
+                  <a class="blog-footer__item-link" href="#"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Careers</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="blog-footer__column">
+              <h3 class="blog-footer__title">Более</h3>
+              <ul class="blog-footer__items">
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Документация</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Лицензия</a>
+                </li>
+                <li class="blog-footer__item">
+                  <a class="blog-footer__item-link" href="#">Измененния</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="blog-footer__copyring">
+          <div class="blog-footer__img-wrapper">
+            <img class="blog-footer__img" src="icons/heart.svg" alt="" />
+          </div>
+          <p class="blog-footer__copyring-descr">
+            Copyright © 2019. Crafted with love.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
