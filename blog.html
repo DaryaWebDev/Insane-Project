@@ -17,17 +17,18 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    <a id="button"></a>
     <header class="blog-header">
-      <div class="container blog-header__container">
+      <div class="container blog-header__container container--320">
         <div class="blog-header__top">
           <a href="#" class="logo blog-header__logo">
             <img src="icons/Logo.svg" alt="logo" />
           </a>
-          <div class="blog-header__wrapper">
+          <div class="blog-header__wrapper blog-header__wrapper--hidden">
             <nav class="menu blog-header__menu">
               <ul class="menu__items">
                 <li class="menu__item menu__item--one">
-                  <a class="menu__item-link" href="#">Домой</a>
+                  <a class="menu__item-link" href="index.html">Домой</a>
                 </li>
                 <li class="menu__item menu__item--two">
                   <a class="menu__item-link" href="#"
@@ -68,14 +69,20 @@
             </nav>
             <a class="blog-header__btn">Получить</a>
           </div>
+          <button class="blog-header-top--button blog-header-top menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
         </div>
         <!-- /.header__top -->
         <div class="blog-header__bottom">
           <h1 class="blog-header__title">
             Дешевые авиабилеты -
             <span class="blog-header__title-string">
-              отличный способ сэкономить</span
-            >
+              отличный способ 
+              <span class="blog-header-title blog-header-title--ml10">сэкономить</span>
+              </span>
           </h1>
           <!-- /.search -->
         </div>
@@ -84,7 +91,7 @@
     </header>
 
     <section class="blog-posts blog-posts--ml18">
-      <div class="container blog-posts__container">
+      <div class="container blog-posts__container container--320">
         <aside class="blog-posts__contacts blog-posts__contacts--visible">
           <h3 class="blog-posts__contacts-title">Share</h3>
           <div class="blog-posts__contacts-icons">
@@ -129,20 +136,19 @@
               />
               <div class="author__wrapper">
                 <span class="author__name author__name--g">Viola Manisa</span>
-                <div class="author__status">
+                <div class="author__status author__status--flex">
                   <img
                     class="author__status-img"
                     src="icons/check.svg"
                     alt="icon: status confirmed"
                   />
-                  <span class="author__status-descr">Verified writer</span>
+                  <span class="author__status-descr author__status-descr--ml8">Verified writer</span>
                 </div>
               </div>
             </div>
             <!-- /.author__user-info -->
-            <span class="author__date author__date--post"
-              >PUBLISHED ON MAY, 2 2019</span
-            >
+            <span class="author__date author__date--post author__date--post--visible">PUBLISHED ON MAY, 2 2019</span>
+            <span class="author__date author__date--post author__date--post--hidden">MAY, 2 2019</span>
           </div>
           <div class="blog-posts__photo">
             <img class="blog-posts__photo-img" src="img/blog-1.webp" alt="" />
@@ -172,8 +178,8 @@
             <h3 class="blog-posts__title blog-posts__title--two">
               Развлекательная программа
             </h3>
-            <p class="blog-posts__text">
-              Одно из главных достоинств Лас-Вегаса, Рино и Атлантик-Сити (но особенно Лас-Вегаса) - это количество доступных шоу. Вы можете увидеть таких комиков высшего класса, как Джей Лено, Джерри Сайнфелд, Рэй Романо, Тим Аллен и даже таких, как Билл Косби и Крис Рок. Если вы увлекаетесь музыкой, вы можете посмотреть на певиц, таких как Селин Дион, Мэрайя Кэри, Бритни Спирс, Кристина Агилера и Бейонк?, Исполнителей-мужчин, таких как Фил Коллинз, Эрик Клэптон, Snoopy Dog, и таких групп, как Oasis и Bon Jovi. Я мог бы продолжать и продолжать, но список бесконечен. Если вы увлекаетесь магией, вы можете наблюдать, как фокусники, такие как Дэвид Копперфилд, делают свои дела в нескольких метрах от вас. Все, что вам нравится, вы можете найти здесь: от западной музыки до старинных песен и джаза, рока, от Heavy Mettle до транса. Все, что вам нужно сделать, это посмотреть на маршрут, предлагаемый во время вашего визита.
+            <p class="blog-posts__text blog-posts__text--pl5">
+              Одно из главных достоинств Лас-Вегаса, Рино и Атлантик-Сити (но особенно Лас-Вегаса) - это количество доступных шоу. Вы можете увидеть таких комиков высшего класса, как Джей Лено, Джерри Сайнфелд, Рэй Романо, Тим Аллен и даже таких, как Билл Косби и Крис Рок. Если вы увлекаетесь музыкой, вы можете посмотреть на певиц, таких как Селин Дион, Мэрайя Кэри, Бритни Спирс, Кристина Агилера и Бейонк?, <span class="blog-posts__wrap blog-posts__wrap--br"><br></span>Исполнителей-мужчин, таких как Фил Коллинз, Эрик Клэптон, Snoopy Dog, и таких групп, как Oasis и Bon Jovi. Я мог бы продолжать и продолжать, но список бесконечен. Если вы увлекаетесь магией, вы можете наблюдать, как фокусники, такие как Дэвид Копперфилд, делают свои дела в нескольких метрах от вас. Все, что вам нравится, вы можете найти здесь: от западной музыки до старинных песен и джаза, рока, от Heavy Mettle до транса. Все, что вам нужно сделать, это посмотреть на маршрут, предлагаемый во время вашего визита.
             </p>
           </div>
           <div class="blog-posts__paragraph blog-posts__paragraph--three">
@@ -185,18 +191,27 @@
             </p>
           
           <div class="blog-posts__wrapper">
-            <div class="blog-posts__swiper swiper-container">
+            <div class="blog-posts__swiper swiper-container container--320">
 
             <div class="blog-posts__wrapper swiper-wrapper">
               <div class="blog-posts__slide swiper-slide">                       
-                  <img class="blog-posts__image" src="img/blog-2.webp" alt="image: offer">                
+                  <img class="blog-posts__image" src="img/blog-2.webp" alt="image: offer">
+                  
+                            
               </div>
+              
+              <div class="blog-posts__slide swiper-slide">
+                <img class="blog-posts__image" src="img/blog-2-1.webp" alt="image: offer">
+                </div> 
+                <div class="blog-posts__slide swiper-slide">
+                  <img class="blog-posts__image" src="img/blog-2-3.webp" alt="image: offer">      
+                </div> 
 
             </div>
             
             </div>
-          <button class="blog-posts__button blog-posts__button--prev"><i class="fa fa-arrow-left blog-posts__btn"></i></button>
-          <button class="blog-posts__button blog-posts__button--next"><i class="fa fa-arrow-right blog-posts__btn"></i></button>
+          <button class="blog-posts__button blog-posts__button--prev"><i class="fa fa-arrow-left blog-posts__btn blog-posts__btn--prev"></i></button>
+          <button class="blog-posts__button blog-posts__button--next"><i class="fa fa-arrow-right blog-posts__btn blog-posts__btn--next"></i></button>
           </div>
           <p class="blog-posts__photo-descr blog-posts__photo-descr--swiper">
               This is a caption on this photo for reference
@@ -205,11 +220,13 @@
         </div>
         <div class="blog-posts__post blog-posts__post--third">
           <div class="blog-posts__paragraph blog-posts__paragraph--four">
-            <h2 class="blog-posts__title blog-posts__title--big">
-              Достопримечательности, которые вы должны увидеть во время своего визита в Вегас:
+            <h2 class="blog-posts__title blog-posts__title--big blog-posts__title--fs24">
+              Достопримечательнос<span class="blog-posts__wrap blog-posts__wrap--br"><br></span>ти, которые вы должны увидеть во время своего визита в Вегас:
             </h2>
             <p class="blog-posts__text blog-posts__text--four">
-              Плотина Гувера и Большой каньон: забронируйте себе место в любой из множества доступных обзорных экскурсий и посмотрите архитектурное чудо - плотину Гувера, построенную над Большим каньоном, которая также является грандиозным зрелищем, которое стоит увидеть отдельно. Черный каньон - еще одно место, которое нужно увидеть,<br> как и озеро Мид, которое так красиво только потому, что это водоем, окруженный пустынной природой. Река Колорадо:
+              Плотина Гувера и Большой каньон: забронируйте себе место в любой из множества доступных обзорных экскурсий и посмотрите архитектурное чудо - плотину Гувера, построенную над Большим каньоном, которая также является грандиозным зрелищем, которое стоит увидеть отдельно. Черный каньон - еще одно место, которое нужно увидеть,
+              <span class="blog-posts__wrap blog-posts__wrap--one"><br></span>
+               как и озеро Мид, которое так красиво только потому, что это водоем, окруженный пустынной природой. Река Колорадо:
             </p>
             <p class="blog-posts__text blog-posts__text--four">
               Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту реки, нужно спуститься вниз. Река Колорадо отлично подходит для рафтинга и водных видов спорта, но вам не обязательно принимать участие, если это не для вас.
@@ -227,15 +244,16 @@
         <div class="quote blog-posts__quote">
           <div class="quote__wrapper">
             <i class="quote__icon fa fa-quote-left"></i>
-            <p class="quote__text">Многие люди сказали бы, что это абсолютное безумие продолжать делать одно и то же, раз за разом, ожидая получить другой результат или что-то другое случится.</p>
-            <p class="quote__descr">Даниэль принимает гостей в Джокьякарте, чтобы заработать дополнительные деньги</p>
+            <p class="quote__text"><span class="quote__span quote__span--hidden">“</span>Многие люди сказали бы, что это абсолютное безумие продолжать делать одно и то же, раз за разом, ожидая получить другой результат или что-то <span class="quote__span quote__span--ml">другое случится.<span class="quote__span quote__span--hidden">"</span></span></p>
+            <p class="quote__descr quote__descr--visible">Даниэль принимает гостей в Джокьякарте, чтобы заработать дополнительные деньги</p>
+            <p class="quote__descr quote__descr--hidden">Daniel hosts in Yogyakarta to earn extra money</p>
             <img class="quote__sponsor" src="img/sponsor-avatar.webp" alt="">
           </div>
         </div>
 
         <div class="blog-posts__paragraph blog-posts__paragraph--six">
             <p class="blog-posts__text blog-posts__text--six">
-              Плотина Гувера и Большой каньон: забронируйте себе место в любой из множества доступных обзорных экскурсий и посмотрите архитектурное чудо - плотину Гувера, построенную над Большим каньоном, которая также является грандиозным зрелищем, которое стоит увидеть отдельно. Черный каньон - еще одно место, которое нужно увидеть,<br> как и озеро Мид, которое так красиво только потому, что это водоем, окруженный пустынной природой. Река Колорадо: 
+              Плотина Гувера и Большой каньон: забронируйте себе место в любой из множества доступных обзорных экскурсий и посмотрите архитектурное чудо - плотину Гувера, построенную над Большим каньоном, которая также является грандиозным зрелищем, которое стоит увидеть отдельно. Черный каньон - еще одно место, которое нужно увидеть,<span class="blog-posts__wrap blog-posts__wrap--one"><br></span> как и озеро Мид, которое так красиво только потому, что это водоем, окруженный пустынной природой. Река Колорадо: 
             </p>
             <p class="blog-posts__text blog-posts__text--six">
               Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту реки, нужно спуститься вниз. Река Колорадо отлично подходит для рафтинга и водных видов спорта, но вам не обязательно принимать участие, если это не для вас.
@@ -300,21 +318,20 @@
                 alt="Author avatar"
               />
               <div class="author__wrapper">
-                <span class="author__name author__name--g">Viola Manisa</span>
-                <div class="author__status">
+                <span class="author__name author__name--g author__name--mb1">Viola Manisa</span>
+                <div class="author__status author__status--flex">
                   <img
                     class="author__status-img"
                     src="icons/check.svg"
                     alt="icon: status confirmed"
                   />
-                  <span class="author__status-descr">Verified writer</span>
+                  <span class="author__status-descr author__status-descr--ml8">Verified writer</span>
                 </div>
               </div>
             </div>
             <!-- /.author__user-info -->
-            <span class="author__date author__date--post"
-              >PUBLISHED ON MAY, 2 2019</span
-            >
+            <span class="author__date author__date--post author__date--post--visible">PUBLISHED ON MAY, 2 2019</span>
+            <span class="author__date author__date--post author__date--post--hidden">MAY, 2 2019</span>
           </div>
             <hr class="blog-posts__line">
         </div>
@@ -342,7 +359,7 @@
               </div>
             </div>
             <div class="comments__content">
-              <div class="comments__content-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </div>
+              <div class="comments__content-text"><span class="comments__text comments__text--visible">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span><span class="comments__text comments__text--hidden">Cras sit amet nibh libero, in gravida nulla. Nulla vel met scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</span> </div>
             </div>
           </div>
           <div class="comments__answer">            
@@ -358,7 +375,7 @@
     <section class="blog-subscribe">
       <img class="blog-subscribe__wave" src="img/Wave-subsc.svg" alt="" />
       <div class="blog-subscribe__content">
-        <div class="container blog-subscribe__container">
+        <div class="container blog-subscribe__container container--320">
           <div class="blog-subscribe__mailing">
             <h2 class="blog-subscribe__title">
               Получайте наши истории на ваш почтовый ящик еженедельно.
@@ -406,7 +423,7 @@
       <!-- /.subscribe__content -->
     </section>
     <footer class="blog-footer blog-footer--ml18">
-      <div class="container blog-footer__container">
+      <div class="container blog-footer__container container--320">
         <div class="blog-footer__wrapper">
           <hr class="blog-footer__hr">
           <div class="blog-footer__contacts">
@@ -487,7 +504,7 @@
                 </li>
                 <li class="blog-footer__item blog-footer__item--policy">
                   <a class="blog-footer__item-link" href="#"
-                    >Политика конфиденциальности</a
+                    ><span class="blog-footer__policy blog-footer__policy--visible">Политика конфиденциальности</span><span class="blog-footer__policy blog-footer__policy--hidden">Privacy Policy</span></a
                   >
                 </li>
                 <li class="blog-footer__item">
@@ -497,7 +514,7 @@
             </div>
 
             <div class="blog-footer__column">
-              <h3 class="blog-footer__title">Более</h3>
+              <h3 class="blog-footer__title"><span class="blog-footer__more blog-footer__more--visible">Более</span><span class="blog-footer__more blog-footer__more--hidden">Ещё..</span></h3>
               <ul class="blog-footer__items">
                 <li class="blog-footer__item">
                   <a class="blog-footer__item-link" href="#">Документация</a>
@@ -506,7 +523,7 @@
                   <a class="blog-footer__item-link" href="#">Лицензия</a>
                 </li>
                 <li class="blog-footer__item">
-                  <a class="blog-footer__item-link" href="#">Измененния</a>
+                  <a class="blog-footer__item-link" href="#">Изменен<span class="blog-footer__change blog-footer__change--visible">н</span>ия</a>
                 </li>
               </ul>
             </div>
@@ -522,6 +539,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

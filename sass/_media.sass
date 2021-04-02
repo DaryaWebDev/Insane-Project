@@ -36,6 +36,16 @@
           &__btn
             color: #287bf0            
             transition: 0.5s all
+  .blog-posts
+    &__button
+      &:hover, &:active
+        border: 1px solid #287bf0
+        background-color: white
+        transition: 0.5s all
+        .blog-posts
+          &__btn
+            color: #287bf0            
+            transition: 0.5s all
 
   .link
     &--see
@@ -48,6 +58,8 @@
     &:hover
       background-color: #3f83e252
       transition: 0.2s all
+      
+
   .subscribe
     &__form
       &-btn
@@ -78,12 +90,33 @@
             z-index: 1
             background-color: #679de952
             border-radius: 16px
+  .practice
+    &__item      
+      &:hover
+        background-color: #3f83e252
+        transition: 0.2s all          
+        &::before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          z-index: 1
+          background-color: #679de952
+          border-radius: 16px
   .blog-header
     &__btn
       &:hover, &:active
         background-color: white
         color: $primary
         transition: 0.7s all  
+  
+  #button
+    &:hover
+      cursor: pointer
+      background-color: #1565D8
+
         
 
 
@@ -490,7 +523,16 @@
       margin-right: 0
     &__icons
       justify-content: space-between
+  .blog-header
+    &__title
+      margin-left: 0
   .blog-posts
+    padding-top: 230px
+    &__post
+      max-width: 700px      
+    &__text
+      max-width: 100%
+      width: 100%
     &__contacts
       min-height: 20px
       &-title
@@ -505,19 +547,45 @@
         flex-direction: row
       &-icon
         margin-bottom: 0
+    &__photo
+      min-width: 100%
+    &__title
+      width: 100%
+    &__wrapper
+      min-width: 100%
+    &__quote
+      width: 100%
+  .gallery
+    &__wrapper
+      grid-gap: 15px
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 200px 200px
+
+    
   .comments
+    &__author
+      flex-direction: column      
+      &-info
+        margin-left: 0
+      &-img
+        margin: 0 auto
+      &-date
+        text-align: center
+      &-name
+        text-align: center
     &__answer
-      //width: 100%
+      width: 100%
       &-input
-        //min-width: 70%
+        min-width: 70%
     &__wrapper
       //max-width: 700px
     &__content
-      //margin-left: 70px
+      margin-left: 60px
       //max-width: 90%
-      //min-width: 84%
+      min-width: 50%
+      max-width: 88%
       &-text
-        //min-width: 100%
+        min-width: 100%
 
   .blog-posts
     &__button      
@@ -525,6 +593,25 @@
         left: -2%
       &--next
         right: -2%
+  .footer
+    &__wrapper
+      flex-wrap: wrap
+    &__contacts
+      margin: 0 auto
+      text-align: center
+      order: 5
+    &__columns
+      margin-left: 0
+      margin-bottom: 47px
+    &__logo
+      margin-left: 30%
+    &__icon
+      margin-right: 0
+    &__icons
+      justify-content: space-between
+    &__hr
+      display: none
+
 
 
 
@@ -654,6 +741,10 @@
     &--button
       cursor: pointer
       outline: none
+  .blog-header-top
+    &--button
+      cursor: pointer
+      outline: none
   .menu
       &-button
         display: flex
@@ -680,8 +771,29 @@
     &__column
       margin-left: 0
       min-width: 102px
+  .comments
+    &__answer
+      &-input
+        min-width: 60%
+  .quote
+    padding: 50px 60px 86px 60px
+    &__text
+      font-size: 33px
+  .blog-header
+    &__wrapper
+      &--hidden
+        display: none
+    &__top
+      align-items: center
+      margin-left: 24px
+      margin-right: 24px
+      
+
+
 
 @media (max-width: 576px)
+  #button
+    display: none
   .header
     &__logo
       width: 77px
@@ -791,10 +903,117 @@
         grid-column: 2
       &--sixth
         grid-column: 2
+  .blog-header
+    &__title
+      font-size: 32px
+      line-height: 40px
+      &-string
+        margin-left: 0
+  .blog-posts
+    &__photo
+      &-img
+        min-height: 200px
+    &__title
+      font-size: 26px
+      line-height: 36px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      &--first
+        font-size: 16px
+        line-height: 28px
+    &__quote
+      padding: 30px 30px 70px 30px
+      
+  .author
+    &__date
+      &--post
+        &--visible  
+          display: none
+        &--hidden
+          display: block
+  .quote
+    &__text
+      font-size: 25px
+      line-height: 42px
+  .gallery
+    &__inner
+      &--first
+        grid-column: 1 / 3
+        grid-row: 1 / 2
+      &--second
+        grid-column: 1 / 2
+      &--third
+        grid-column: 2 / 3
+  .comments
+    &__wrapper
+      flex-direction: column
+    &__content
+      margin-left: 0
+    &__title
+      font-size: 26px
+      line-height: 32px
+    &__author
+      margin-bottom: 16px
+      flex-direction: row
+      // justify-content: flex-start
+      // align-items: flex-start
+      &-date
+        text-align: left
+      &-img
+        margin: 0
+        margin-right: 13px
+      &-name
+        font-size: 14px
+        line-height: 20px
+        text-align: left
+    &-text
+      font-size: 14px
+      line-height: 24px
+    &__answer
+      position: relative
+      justify-content: flex-start
+      width: 89%
+      //filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.06))
+      &-input
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+        min-width: 50%
+        max-width: 90%
+      &-btn
+        position: absolute
+        top: 80px
+        left: 0
+
+
+  .blog-subscribe
+    &__article
+      display: none
+
+  .quote
+    &__descr
+      &--hidden
+        display: block
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+      &--visible
+        display: none
+
+
+@media (max-width: 337px)
+  .blog-posts
+    &__title
+      &--fs24
+        font-size: 24px
+
 
 @media (max-width: 320px)
   .container
     width: 90%
+    &--320
+      width: 85%
   .header
     padding-top: 8px
     max-height: 482px
@@ -1056,6 +1275,10 @@
     &--button
       margin-top: 11px
       margin-right: 2px
+  .blog-header-top
+    &--button
+      margin-top: 11px
+      margin-right: 2px
   .author
     &__status
       &--w98
@@ -1078,6 +1301,9 @@
         line-height: 21px
 
   .subscribe
+    padding-top: 13px
+    &__content
+      padding-top: 1px
     &__title
       font-size: 24px
       line-height: 32px
@@ -1085,7 +1311,7 @@
       max-width: 226px
       margin-bottom: 8px
     &__mailing
-      margin-top: 63px
+      margin-top: 54px
       margin-left: 9px
     &__span
       &--visible
@@ -1161,31 +1387,355 @@
     &__change
       &--hidden
         display: none
+  .quote
+    &__text
+      font-size: 23px
+      line-height: 30px
+  .blog-header
+    &-top
+      &--button
+        margin-right: -18px
+    padding-top: 8px
+    &__container
+      width: 88%
+    &__top
+      margin-bottom: 81px
+      
+    &__logo
+      width: 77px
+      height: 24px
+  .blog-header
+    min-height: 360px
+    &-title
+      &--ml10
+        margin-right: 8px
+    &__wave
+      &-img
+        display: none
+  .blog-posts
+    padding-bottom: 134px
+    &__line
+      &--first
+        margin-bottom: 13.5px
+    &__contacts
+      &-title
+        margin-right: 14px
+        margin-top: -1px
+      &-icon
+        &--facebook, &--linkedin, &--instagram
+          margin-left: 4px
+        &--twitter, &--instagram, &--linkedin, &--facebook
+          font-size: 16px
+          line-height: 18px
+      &-title
+        font-size: 14px
+        line-height: 20px
+    &__text
+      font-size: 12px
+      line-height: 22px
+      &--pl5
+        padding-left: 5px
+        min-width: 276px
+      &--first
+        margin-bottom: 39px      
+      &--six
+        margin-left: -2px
+      &--seven
+        margin-bottom: 79px
+          
+    &__paragraph
+      &--one
+        margin-bottom: 38px
+      &--three
+        margin-bottom: 21px
+      &--four
+        margin-bottom: 30px
+      &--five
+        margin-bottom: 75px
+      &--six
+        margin-bottom: 90px
+      &--seven
+        margin-bottom: 24px
+    &__title
+      font-size: 21px
+      line-height: 32px
+      &--big
+        margin-bottom: 18px
+      &--fs24
+        font-size: 24px
+        line-height: 32px
+        margin-left: 3px
+        margin-bottom: 8px
+      &--two
+        margin-bottom: 11px
+        width: 103%
+        font-size: 20px
+        line-height: 24px
+      &--three
+        line-height: 42px
+        margin-left: -3px
+        margin-bottom: 2px
+      &--five
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 15px
+      &--seven
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 13px
+    &__swiper
+      width: 272px
+      height: 200px
+    &__image
+      height: 100%
+      object-fit: cover  
+    &__swiper
+      margin-left: -4px   
+    &__button
+      width: 39px
+      height: 40px
+      &--prev
+        left: -9%
+        top: 50.8%
+      &--next
+        right: -5%
+        top: 45.8%
+    &__btn
+      width: 13px
+      height: 16px
+      transform: translateY(-69%)
+      &--prev
+        margin-left: -7px
+      &--next
+        margin-left: -6px        
+    &__text
+      &--first
+        font-size: 16px
+        line-height: 28px
+      &--three
+        margin-left: -2px
+        margin-bottom: 28px
+    &__post
+      &--first
+        padding-top: 33px
+        margin-bottom: 58px
+    &__author
+      &--first
+        margin-bottom: 33px
+    &__photo
+      &-img
+        margin-bottom: 9px
+        object-fit: cover
+      &-descr
+        font-size: 12px
+        line-height: 16px
+        &--swiper
+          margin-top: 9px
+          margin-right: 8px
+    &__gallery
+      margin-bottom: 33px
+    &__wrap
+      &--one
+        display: none
+      &--br
+        width: 100%
+        display: block
+        height: 1px
+        margin-top: -1px
+    &__quote
+      margin-left: -24px
+      margin-bottom: 112px
+    &__author
+      &--second
+        margin-bottom: 16px
+  .quote
+    padding: 47px 24px 75px 21px
+    width: 320px
+    border-radius: 0
+    &::before
+      content: ""
+      position: absolute
+      width: 101px
+      height: 175px
+      background: #F5E5E5
+      top: 0
+      right: 0
+      background: url("../img/oval-320.svg") no-repeat
+    &__icon
+      margin-bottom: 25px
+    &__text
+      font-size: 23px
+      line-height: 30px
+      max-width: 276px
+      letter-spacing: 1px
+      margin-bottom: 61px
+    &__span
+      &--ml
+        margin-left: 6px
+      &--hidden
+        display: inline-block
+    &__descr
+      &--hidden
+        max-width: 206px
+        margin: 0 auto
+    &__sponsor
+      width: 96px
+      height: 96px
+      bottom: -47px
+  .author
+    &__status
+      &--flex
+        justify-content: flex-start
+      &-descr
+        &--ml8
+          margin-left: 8px
+    &__date
+      &--post
+        &--hidden
+          font-size: 10px
+          line-height: 14px
+    &__name
+      &--mb1
+        margin-bottom: 1.5px
+  .gallery
+    &__wrapper
+      grid-gap: 12px
+      grid-template-rows: 176px 100px
+    &__descr
+      font-size: 12px
+      line-height: 16px
+      width: 244px
+      margin: 0 auto
+  .comments
+    &__text
+      &--hidden
+        display: inline
+      &--visible
+        display: none
+    &__wrapper
+      margin-bottom: 19px
+      &--second
+        margin-bottom: 22px
+    &__content
+      max-width: 100%
+      padding: 16px
+      &-text
+        font-size: 14px
+        line-height: 24px
+    &__author
+      &-date
+        font-size: 12px
+        line-height: 18px
+      &-img
+        width: 36px
+        height: 36px
+        margin-top: 2px
+      &-name
+        margin-bottom: 3px
+    &__title
+      font-size: 24px
+      line-height: 32px
+    &__answer
+      width: 100%
+      min-height: 60px
+      background-color: #fff
+      filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.06))
+      &-btn
+        top: 76px
+        padding: 9px 16px
+        max-width: 182px
+      &-avatar
+        width: 36px
+        height: 36px
+        margin-right: 9px
+  .blog-subscribe
+    &__wave
+      display: none
+    &__title
+      font-size: 24px
+      line-height: 32px
+      text-align: left
+      margin-bottom: 8px
+    &__mailing
+      margin-top: 47px
+    &__form
+      margin-bottom: 0
+      &-input
+        height: 48px
+        min-height: 48px
+      &-btn
+        min-height: 48px
+        height: 48px
+        font-size: 16px
+        line-height: 22px
+        padding: 13px 48px 15px 49px
+    &__descr
+      font-size: 14px
+      line-height: 27px
+      text-align: left
+      max-width: 272px
+    &__content
+      padding-bottom: 0
+  .blog-footer
+    padding: 49px 0 1px 0px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 18px
+    &__item
+      margin-bottom: 13px
+      &-link
+        font-size: 14px
+        line-height: 20px
+    &__columns
+      grid-template-rows: 241px 214px
+      margin-left: -4px
+      grid-row-gap: 0
+      grid-column-gap: 42px
+    &__column
+      &:nth-child(4)
+        margin-left: 0
+    &__more
+      &--visible
+        display: none
+      &--hidden
+        display: block
+    &__policy
+      &--visible
+        display: none
+      &--hidden
+        display: block
+    &__logo
+      width: 77px
+      height: 24px
+      margin-left: 33%
+      margin-bottom: 16px
+    &__descr
+      font-size: 14px
+      line-height: 28px
+      max-width: 263px
+      margin-left: -17px
+      margin-bottom: 24px
+    &__change
+      &--visible
+        display: none
+    &__icons
+      margin: 0 auto
+      max-width: 181px
+    &__icon
+      margin-right: 0
+      &--google, &--twitter
+        margin-right: -7px
+      &--instagram
+        margin-right: -2px
+      &--youtube
+        margin-right: 3px
+    &__copyring
+      display: none
 
+@media (max-width: 319px)
+  .quote
+    max-width: 200%
+    width: 117.7%
 
-// @media (max-width: 1440px)
-//   .blog-header
-//     min-height: 635px
-//     &__container
-//       max-width: 1119px
-//     &__wrapper
-//       padding-right: 0
-//       padding-top: 0
-//     &__btn
-//       padding: 12px 23.77px
-//   .blog-posts
-//     padding: 6px 0
-//     padding-bottom: 88px
-//     margin-left: 0
-//   .blog-subscribe
-//     &__content
-//       padding: 25px 0 138px 0
-//     &__mailing
-//       margin-top: 56px
-//       margin-left: 0
-//     &__article
-//       margin-top: 0
-//   .blog-footer
-//     &--ml18
-//       margin-left: 0
 
