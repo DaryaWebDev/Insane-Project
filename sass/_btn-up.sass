@@ -27,7 +27,20 @@
     opacity: 1
     visibility: visible
 
+@media (max-width: 767px)
+  #button
+    margin: 0px
+    width: 40px
+    height: 40px
+    &::after
+      font-size: 25px
+      line-height: 38px
+
 @media (max-width: 576px)
   #button
-    display: none
-
+    width: 35px
+    height: 35px
+    &:after
+      font-size: 20px
+      line-height: 30px
+    

@@ -59,6 +59,8 @@
   &__search
     margin: 0 auto 
     margin-bottom: 95px
+  &--thank
+    min-height: 750px
 .menu
   &__items
     display: flex
@@ -86,6 +88,8 @@
     list-style: none
     position: absolute
     top: 100%
+    &--hidden
+      display: none
   &__hiden-item
     min-width: 170px
     float: none
@@ -170,18 +174,10 @@
     cursor: pointer
     &:last-child
       margin-right: 0
-    // &:hover, &:active
-    //   background-color: white
-    //   color: $primary
 
 .best-offer
   background-color: #fff
   border-radius: 16px 
-  // &__wrapper
-  //   &--scroll
-  //     min-height: 180px
-  //     max-height: 180px
-  //     overflow-y: auto
   overflow: hidden
 
   &__link
@@ -236,3 +232,9 @@
 .header-top
   &--button
     display: none
+
+.blog-burger
+  &__wrapper
+    display: none
+
+

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body>
+  <body id="body">
     <a id="button"></a>
     <header class="header">
       <div class="container header__container">
@@ -63,11 +63,11 @@
                   </ul>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Помощь</a>
+                  <a class="menu__item-link" href="index.html">Помощь</a>
                 </li>
               </ul>
             </nav>
-            <a class="header__btn">Получить</a>
+            <a data-toggle="modal" class="header__btn">Получить</a>
           </div>
           <button class="header-top header-top--button menu-button">
             <span class="menu-button__line"></span>
@@ -79,17 +79,18 @@
         <div class="header__bottom">
           <h1 class="header__title">Отдел новостей</h1>
           <div class="search header__search">
-            <div class="search__form">
-              
+            <form action="#" class="searches search__form">              
                 <i class="search__icon fa fa-search fa--mt"></i>
                 <input
+                  name="search"
+                  minlength="2"
+                  required
                   class="search__input"
                   placeholder="Поиск постов"
                   type="text"
-                />
-              
+                />              
               <button class="search__btn">Поиск</button>
-            </div>
+            </form>
             <div class="search__wrapper">
               <span class="search__text">Популярные Тэги :</span>
               <div class="search__tags">
@@ -151,6 +152,42 @@
       </div>
       <img src="img/Wave.svg" alt="" class="header__wave-img" />
     </header>
+
+        <div class="blog-burger">
+          <div class="blog-burger__wrapper">
+            <nav class="menu-list blog-burger__menu-list">
+                		<div class="menu-list__wrapper">
+                      <div class="menu-list__one">
+                        <a class="menu-list-link" href="index.html">Домой</a>
+                        <div class="menu-list__item">
+                          <div class="menu-list__title">Лендинги</div>
+                          <div class="menu-list__text">
+                            <ul class="menu-list__items">
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Tesla"</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Продажа недвижимости"</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Автосалон"</a></li>
+                            </ul>                            
+                          </div>
+                        </div>
+                        <div class="menu-list__item">
+                          <div class="menu-list__title">Страницы</div>
+                          <div class="menu-list__text">
+                            <ul class="menu-list__items">
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Новостное агенство</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Услуги продвижения</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Акции</a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="menu-list-link" href="#">Помощь</a>
+                        
+                    </div>
+                </div>
+            </nav>
+            <a data-toggle="modal" class="blog-burger__btn">Получить</a>
+          </div>
+        </div>
 
     <section class="popular">
       <div class="container">
@@ -814,14 +851,20 @@
             <h2 class="subscribe__title">
               <span class="subscribe__span subscribe__span--visible">Получите</span><span class="subscribe__span subscribe__span--hidden">Получайте</span> наши истории на ваш почтовый ящик еженедельно.
             </h2>
-            <div class="subscribe__form">
+            <form action="send.php" method="POST" class="sub subscribe__form">
+              <div class="subscribe__inner subscribe__inner--w320">
               <input
+                required
                 class="subscribe__form-input"
                 placeholder="Ваш Email"
-                type="text"
+                type="email"
+                name="email"
+                minlength="4"
               />
-              <button class="subscribe__form-btn">Начать</button>
-            </div>
+              </div>
+              <div class="subscribe__inner subscribe__inner--w97">
+              <button class="subscribe__form-btn" type="submit" name="subs">Начать</button></div>
+            </form>
             <p class="subscribe__descr">
               Получите ответ завтра, если отправите его до 9 вечера сегодня.
               Если мы получили после 9 вечера, мы получим ответ на следующий
@@ -926,9 +969,63 @@
       </div>
     </footer>
 
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__wrapper">
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="icons/close.svg" alt="icon: close" />
+          </a>
+
+          <form action="send.php" method="POST" class="modal__form form">
+            <h3 class="modal__title modal__title_mb-33">Напишите нам</h3>
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              required
+              name="name"
+              minlength="2"
+              maxlength="25"
+            />
+            <input
+              type="tel"
+              class="input modal__input"
+              placeholder="Номер телефона*"
+              required
+              name="phone"
+              minlength="18"
+              maxlength="18"
+            />
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+              minlength="4"
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Сообщение"
+              name="message"
+            ></textarea>
+            <button class="button modal__button" type="submit" name="messa">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательные поля</span>
+          </form>
+        </div>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+
+
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>  
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отдел новостей</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <script src="https://use.fontawesome.com/e476915286.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body id="body">
+    <header class="header header--thank">
+        <div class="container header__container">
+          <div class="header__top">
+            <a href="index.html" class="logo header__logo">
+              <img src="icons/Logo.svg" alt="logo" />
+            </a>
+            <div class="header__wrapper">
+              <nav class="menu header__menu">
+                <ul class="menu__items">
+                  <li class="menu__item menu__item--one">
+                    <a class="menu__item-link" href="index">Домой</a>
+                  </li>
+                  <li class="menu__item menu__item--two">
+                    <a class="menu__item-link" href="#"
+                      >Лендинги<i class="fa fa-angle-down"></i
+                    ></a>
+                    <ul class="menu__hiden-items">
+                      <li class="menu__hiden-item">
+                        <a href="#">Лендинг One</a>
+                      </li>
+                      <li class="menu__hiden-item">
+                        <a href="#">Лендинг Two</a>
+                      </li>
+                      <li class="menu__hiden-item">
+                        <a href="#">Лендинг Three</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__item-link" href="#"
+                      >Страницы<i class="fa fa-angle-down"></i
+                    ></a>
+                    <ul class="menu__hiden-items">
+                      <li class="menu__hiden-item">
+                        <a href="#">Страница One</a>
+                      </li>
+                      <li class="menu__hiden-item">
+                        <a href="#">Страница Two</a>
+                      </li>
+                      <li class="menu__hiden-item">
+                        <a href="#">Страница Three</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__item-link" href="index.html">Помощь</a>
+                  </li>
+                </ul>
+              </nav>
+              <a data-toggle="modal" class="header__btn">Получить</a>
+            </div>
+            <button class="header-top header-top--button menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+          <!-- /.header__top -->
+          <div class="header__bottom">
+            <h1 class="header__title">Отдел новостей</h1>
+            <div class="search header__search">
+              <form class="search__form">
+                
+                  <i class="search__icon fa fa-search fa--mt"></i>
+                  <input
+                    class="search__input"
+                    placeholder="Поиск постов"
+                    type="text"
+                  />
+                
+                <button class="search__btn">Поиск</button>
+              </form>
+              <div class="search__wrapper">
+                <span class="search__text">Популярные Тэги :</span>
+                <div class="search__tags">
+                  <a href="#" class="search__tag">Design</a>
+                  <a href="#" class="search__tag">User Experience</a>
+                  <a href="#" class="search__tag">User Interfaces</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img src="img/Wave.svg" alt="" class="header__wave-img" />
+    </header>
+      
+    <div class="blog-burger">
+            <div class="blog-burger__wrapper">
+              <nav class="menu-list blog-burger__menu-list">
+                      <div class="menu-list__wrapper">
+                        <div class="menu-list__one">
+                          <a class="menu-list-link" href="index.html">Домой</a>
+                          <div class="menu-list__item">
+                            <div class="menu-list__title">Лендинги</div>
+                            <div class="menu-list__text">
+                              <ul class="menu-list__items">
+                                <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Tesla"</a></li>
+                                <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Продажа недвижимости"</a></li>
+                                <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Автосалон"</a></li>
+
+                              </ul>
+                              
+                            </div>
+
+                          </div>
+                          <div class="menu-list__item">
+                            <div class="menu-list__title">Страницы</div>
+                            <div class="menu-list__text">
+                              <ul class="menu-list__items">
+                                <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Новостное агенство</a></li>
+                                <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Услуги продвижения</a></li>
+                                <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Акции</a></li>
+
+                              </ul>
+                            </div>
+                          </div>
+                          <a class="menu-list-link" href="#">Помощь</a>
+                          
+                      </div>
+                      </div>
+              </nav>
+              <a data-toggle="modal" class="blog-burger__btn">Получить</a>
+            </div>
+    </div>
+
+    <section class="popular popular--thank">
+      <div class="container container--popular">
+        <h2 class="popular__title">Сообщение отправлено!</h2>
+        <div class="popular__text popular__text--sub">
+            Спасибо за обращение! Наш менеджер свяжется с вами через несколько минут.          
+            
+
+          </div>  
+              <a href="index.html" class="link link--see link--thank"
+            >Вернуться назад <i class="link__fa link__fa--popular fa fa-arrow-right"></i
+          ></a>
+          </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__wrapper">
+            <hr class="footer__hr">
+            <div class="footer__contacts">
+              <a class="logo footer__logo" href="index.html" >
+                <img src="icons/Logo.svg" alt="logo" />
+              </a>
+              <p class="footer__descr">Создайте современный и креативный веб-сайт с crealand</p>
+              <div class="footer__icons">
+                <a class="footer__icon footer__icon--google" href="https://www.google.com/" target = "_blank" rel="nofollow noopener"><i class="fa fa-google"></i></a>
+                <a class="footer__icon footer__icon--twitter" href="https://twitter.com/" target = "_blank" rel="nofollow noopener"><i class="fa fa-twitter"></i></a>
+                <a class="footer__icon footer__icon--instagram" href="https://www.instagram.com/" target = "_blank" rel="nofollow noopener"><i class="fa fa-instagram"></i></a>
+                <a class="footer__icon footer__icon--linkedin" href="https://ru.linkedin.com/" target = "_blank" rel="nofollow noopener"><i class="fa fa-linkedin-square"></i></a>
+                <a class="footer__icon footer__icon--youtube" href="https://www.youtube.com/" target = "_blank" rel="nofollow noopener"><i class="fa fa-youtube-play"></i></a>
+              </div>
+            </div>
+            <div class="footer__columns">
+                <div class="footer__column">
+                  <h3 class="footer__title">Продукт</h3>
+                  <ul class="footer__items">
+                    <li class="footer__item"><a class="footer__item-link" href="#">Лендинг</a></li>
+                    <li class="footer__item"><a class="footer__item-link" href="#">Функции</a></li>
+                    <li class="footer__item"><a class="footer__item-link" href="#">Документация</a></li>
+                    <li class="footer__item"><a class="footer__item-link" href="#">Скидки</a></li>
+                    <li class="footer__item"><a class="footer__item-link" href="#">Расценки</a></li>
+                  </ul>
+                </div> 
+              <div class="footer__column">
+                <h3 class="footer__title">Сервисы</h3>
+                <ul class="footer__items">
+                  <li class="footer__item"><a class="footer__item-link" href="#">Документация</a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">Дизайн</a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">Темы</a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">Иллюстрации</a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">UI Kit</a></li>
+                </ul>
+              </div> 
+
+              <div class="footer__column">
+                <h3 class="footer__title">Компания</h3>
+                <ul class="footer__items ">
+                  <li class="footer__item"><a class="footer__item-link" href="#">О нас</a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">Условия</a></li>
+                  <li class="footer__item footer__item--policy "><a class="footer__item-link" href="#"><span class="footer__policy footer__policy--visible">Политика конфиденциальности</span>
+                    <span class="footer__policy footer__policy--hidden">Privacy Policy</span></a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">Careers</a></li>
+                </ul>
+              </div> 
+              
+              <div class="footer__column">
+                <h3 class="footer__title"><span class="footer__more footer__more--visible">Более</span><span class="footer__more footer__more--hidden">Ещё..</span></h3>
+                <ul class="footer__items">
+                  <li class="footer__item"><a class="footer__item-link" href="#">Документация</a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">Лицензия</a></li>
+                  <li class="footer__item"><a class="footer__item-link" href="#">Измене<span class="footer__change footer__change--hidden">н</span>ния</a></li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+          <div class="footer__copyring">
+            <div class="footer__img-wrapper">
+              <img class="footer__img" src="icons/heart.svg" alt="" >
+            </div>
+            <p class="footer__copyring-descr">Copyright © 2019. Crafted with love.</p>
+          </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__wrapper">
+          <div class="modal__dialog">
+            <a href="#" class="modal__close">
+              <img src="icons/close.svg" alt="icon: close" />
+            </a>
+
+            <form action="send.php" method="POST" class="modal__form form">
+              <h3 class="modal__title modal__title_mb-33">Напишите нам</h3>
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Ваше имя*"
+                required
+                name="name"
+                minlength="2"
+                maxlength="25"
+              />
+              <input
+                type="tel"
+                class="input modal__input"
+                placeholder="Номер телефона*"
+                required
+                name="phone"
+                minlength="18"
+                maxlength="18"
+              />
+              <input
+                type="email"
+                class="input modal__input"
+                placeholder="Email*"
+                name="email"
+                required
+                minlength="4"
+              />
+              <textarea
+                class="message modal__message"
+                placeholder="Сообщение"
+                name="message"
+              ></textarea>
+              <button class="button modal__button" type="submit" name="messa">
+                Отправить
+              </button>
+              <span class="modal__info">* Обязательные поля</span>
+            </form>
+          </div>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>  
+    <script src="js/main.js"></script>
+  </body>
+</html>

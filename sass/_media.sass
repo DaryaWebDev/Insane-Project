@@ -47,6 +47,7 @@
             color: #287bf0            
             transition: 0.5s all
 
+
   .link
     &--see
       &:hover
@@ -74,6 +75,34 @@
       &-link
         &:hover
           color: #fff
+  .blog-footer
+    &__icon
+      &:hover
+        color: #fff
+    &__item
+      &-link
+        &:hover
+          color: #fff
+  .blog-subscribe
+    &__form
+      &-btn
+        &:hover, &:active
+          background-color: #076dfc
+          transition: 0.3s all
+  .comments
+    &__answer
+      &-btn
+        &:hover, &:active
+          background-color: #076dfc
+          transition: 0.5s all
+  .blog
+    &-posts
+      &__contacts
+        &-icon
+          &:hover
+            color: $primary
+
+  
   .best
     &-offer
       &__link
@@ -117,6 +146,7 @@
       cursor: pointer
       background-color: #1565D8
 
+
         
 
 
@@ -132,6 +162,8 @@
     max-height: 735px
   .popular
     padding-top: 269px
+    &--thank
+      padding-top: 0
   .footer
     &__hr
       max-width: 1100px
@@ -227,6 +259,8 @@
       font-size: 29px
       
   .popular
+    &--thank
+      padding-top: 0
     &__articles
       max-width: 470px
       max-height: 550px
@@ -335,6 +369,8 @@
   .popular
     padding-bottom: 80px
     padding-top: 548px
+    &--thank
+      padding-top: 0
     &__title
       text-align: center
     &__subtitle 
@@ -357,6 +393,8 @@
       margin-top: 5%
     &--hidden
       display: none
+    &--thank
+      margin-top: 20px
   .latest
     &__wrapper
       flex-wrap: wrap
@@ -593,6 +631,12 @@
         left: -2%
       &--next
         right: -2%
+    &__image
+      max-width: 700px
+      height: 360px
+    &__wrapper
+        max-width: 700px
+        height: 360px
   .footer
     &__wrapper
       flex-wrap: wrap
@@ -611,6 +655,18 @@
       justify-content: space-between
     &__hr
       display: none
+  .subscribe, .blog-subscribe
+    &__form
+      width: 100%
+      &-btn
+        width: 100%
+      &-input
+        width: 100%
+    &__inner
+      width: 100%
+      margin-top: 10px
+      &--w320
+        width: 100%
 
 
 
@@ -620,10 +676,148 @@
     max-width: 576px
     width: 90%
   .header
+    &__btn
+      margin: 0 auto
+    &__menu
+      max-width: 100%
     &__wrapper
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 80px
+      background-color: #3372e8
+      z-index: 100
+
+      &--visible
+        display: flex
+        flex-direction: column
+  .menu
+    &__items
+      align-items: center
+      display: flex
+      flex-direction: column
+      margin-top: 20px
+    &__item
+      margin-bottom: 20px
+      margin-right: 0
+      &:last-child
+        margin-right: 0
+      &--two
+          // &:active, &:hover
+          //   margin-bottom: 75px
+          &--mb70
+            margin-bottom: 70px
+    &__hiden
+      &-items
+        top: 31%
+
     &__top
       align-items: center
+  .blog-header
+    &__wrapper
+      display: none
+
+
+  .blog-burger
+    &__btn
+      margin: 0 auto
+      padding: 12px 22.77px
+      display: inline-block
+      color: #fff
+      border: 1px solid #fff
+      border-radius: 6px
+      outline: none
+      font-family: "Open Sans", sans-serif
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      font-weight: 700
+      cursor: pointer
+      max-width: 170px
+    &__menu-list
+      max-width: 100%   
+    &__wrapper
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 80px
+      background-color: #3372e8
+      z-index: 100
+      &--visible
+        display: flex
+        flex-direction: column
+  .menu-list
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        height: 100%
+        padding: 50px
+    &__link
+      font-size: 16px
+    &__item
+      margin: 0px 0px 20px 0px
+    &__items
+      list-style: none
+      padding-left: 28px     
+    &__text
+      display: none
+    &__title
+      text-transform: uppercase
+      letter-spacing: 2px
+      position: relative
+      padding: 0px 0px 0px 30px
+      cursor: pointer
+      font-family: "Open Sans", sans-serif
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #fff
+      &:before , &:after
+        content: ''
+        width: 10px
+        height: 1px
+        background-color: #fff
+        position: absolute
+        top: 8px
+        transition: all 0.3s ease 0s
+      &:before
+        transform: rotate(40deg)
+        left: 0
+      &:after
+        transform: rotate(-40deg)
+        left: 8px
+      .active
+        &:before, &:after
+          background-color: red
+        &:before
+          transform: rotate(-40deg)
+        &:after
+          transform: rotate(40deg)
+
+  .menu-list
+    &-link
+      display: block
+      margin: 0px 0px 20px 0px
+      text-transform: uppercase
+      letter-spacing: 2px
+      position: relative;
+      padding: 0px 0px 0px 30px
+      cursor: pointer
+      font-family: "Open Sans", sans-serif
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #fff
+
+      
+
+
+
   .search
     &__tags
       flex-wrap: wrap
@@ -787,13 +981,26 @@
       align-items: center
       margin-left: 24px
       margin-right: 24px
+  .blog-posts
+    &__image
+      max-width: 560px
+      max-height: 360px
+    &__wrapper
+        max-width: 560px
+        max-height: 360px
       
-
+@media (max-width: 600px)
+  .blog-posts
+    &__image
+      max-width: 530px
+      max-height: 360px
+    &__wrapper
+        max-width: 530px
+        max-height: 360px
 
 
 @media (max-width: 576px)
-  #button
-    display: none
+
   .header
     &__logo
       width: 77px
@@ -860,6 +1067,8 @@
       height: 48px
   .popular
     padding-top: 571px
+    &--thank
+      padding-top: 50px
     &__articles
       max-height: 450px
   .latest
@@ -924,6 +1133,18 @@
         line-height: 28px
     &__quote
       padding: 30px 30px 70px 30px
+    &__button
+      width: 40px
+      height: 40px
+    &__btn
+      width: 13px
+      height: 16px
+      transform: translateY(-61%)
+      &--prev
+        margin-left: -8px
+      &--next
+        margin-left: -6px
+      
       
   .author
     &__date
@@ -974,7 +1195,6 @@
       position: relative
       justify-content: flex-start
       width: 89%
-      //filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.06))
       &-input
         font-weight: 600
         font-size: 14px
@@ -1000,6 +1220,13 @@
         text-align: center
       &--visible
         display: none
+  .blog-posts
+    &__image
+      max-width: 100%
+      height: 250px
+    &__wrapper
+        max-width: 100%
+        height: 250px
 
 
 @media (max-width: 337px)
@@ -1014,9 +1241,16 @@
     width: 90%
     &--320
       width: 85%
+  .blog-posts
+    &__swiper
+      &--320
+        width: 85%
   .header
     padding-top: 8px
     max-height: 482px
+    &--thank
+      min-height: 200px
+      max-height: 500px
     &__top
       margin-bottom: 60px
       margin-left: 8px
@@ -1084,6 +1318,8 @@
   .popular
     padding-top: 453px
     padding-bottom: 67px
+    &--thank
+      padding-top: 30px
     &__title
       margin-bottom: 12px
     &__info
@@ -1732,6 +1968,21 @@
         margin-right: 3px
     &__copyring
       display: none
+  .blog-posts
+    &__image
+      max-width: 272px
+      height: 200px
+    &__wrapper
+        max-width: 272px
+        height: 200px
+  .subscribe, .blog-subscribe
+    &__inner
+      width: 100%
+      margin-top: 0
+      &--w97
+        width: 97%
+      &--w320
+        width: 97%
 
 @media (max-width: 319px)
   .quote

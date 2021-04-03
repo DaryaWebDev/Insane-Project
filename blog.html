@@ -16,15 +16,15 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body>
+  <body id="body">
     <a id="button"></a>
     <header class="blog-header">
       <div class="container blog-header__container container--320">
         <div class="blog-header__top">
-          <a href="#" class="logo blog-header__logo">
+          <a href="index.html" class="logo blog-header__logo">
             <img src="icons/Logo.svg" alt="logo" />
           </a>
-          <div class="blog-header__wrapper blog-header__wrapper--hidden">
+          <div class="blog-header__wrapper">
             <nav class="menu blog-header__menu">
               <ul class="menu__items">
                 <li class="menu__item menu__item--one">
@@ -63,13 +63,13 @@
                   </ul>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Помощь</a>
+                  <a class="menu__item-link" href="index.html">Помощь</a>
                 </li>
               </ul>
             </nav>
-            <a class="blog-header__btn">Получить</a>
+            <a data-toggle="modal" class="blog-header__btn">Получить</a>
           </div>
-          <button class="blog-header-top--button blog-header-top menu-button">
+          <button class="blog-header-top--button blog-header-top menu-button" >
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -90,6 +90,42 @@
       <img src="img/Wave-blog.svg" alt="" class="blog-header__wave-img" />
     </header>
 
+        <div class="blog-burger">
+          <div class="blog-burger__wrapper">
+            <nav class="menu-list blog-burger__menu-list">
+                		<div class="menu-list__wrapper">
+                      <div class="menu-list__one">
+                        <a class="menu-list-link" href="index.html">Домой</a>
+                        <div class="menu-list__item">
+                          <div class="menu-list__title">Лендинги</div>
+                          <div class="menu-list__text">
+                            <ul class="menu-list__items">
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Tesla"</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Продажа недвижимости"</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Автосалон"</a></li>
+                            </ul>                            
+                          </div>
+                        </div>
+                        <div class="menu-list__item">
+                          <div class="menu-list__title">Страницы</div>
+                          <div class="menu-list__text">
+                            <ul class="menu-list__items">
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Новостное агенство</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Услуги продвижения</a></li>
+                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Акции</a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="menu-list-link" href="#">Помощь</a>
+                        
+                    </div>
+                    </div>
+            </nav>
+            <a data-toggle="modal" class="blog-burger__btn">Получить</a>
+          </div>
+        </div>
+
     <section class="blog-posts blog-posts--ml18">
       <div class="container blog-posts__container container--320">
         <aside class="blog-posts__contacts blog-posts__contacts--visible">
@@ -97,6 +133,7 @@
           <div class="blog-posts__contacts-icons">
             <a
               class="blog-posts__contacts-icon blog-posts__contacts-icon--twitter"
+              target = "_blank" rel="nofollow noopener"
               href="https://twitter.com/" 
               ><i class="fa fa-twitter"></i
             ></a>
@@ -191,7 +228,7 @@
             </p>
           
           <div class="blog-posts__wrapper">
-            <div class="blog-posts__swiper swiper-container container--320">
+            <div class="blog-posts__swiper swiper-container blog-posts__swiper--320">
 
             <div class="blog-posts__wrapper swiper-wrapper">
               <div class="blog-posts__slide swiper-slide">                       
@@ -287,6 +324,7 @@
             <a
               class="blog-posts__contacts-icon blog-posts__contacts-icon--twitter"
               href="https://twitter.com/" 
+              target = "_blank" rel="nofollow noopener"
               ><i class="fa fa-twitter"></i
             ></a>
             <a
@@ -364,11 +402,12 @@
           </div>
           <div class="comments__answer">            
               <img src="img/commentary-avatar2.webp" alt="" class="comments__answer-avatar">
-              <input class="comments__answer-input"placeholder="Написать комментарий..." type="text">            
+              <input class="comments__answer-input" placeholder="Написать комментарий..." type="text">            
             <button class="comments__answer-btn">Комментировать </button>
           </div>
         </div>
       </div>
+    </div>
       
     </section>
 
@@ -380,14 +419,20 @@
             <h2 class="blog-subscribe__title">
               Получайте наши истории на ваш почтовый ящик еженедельно.
             </h2>
-            <div class="blog-subscribe__form">
+            <form action="send.php" method="POST" class="sub blog-subscribe__form">
+              <div class="blog-subscribe__inner blog-subscribe__inner--w320">
               <input
+                required
                 class="blog-subscribe__form-input"
                 placeholder="Ваш Email"
                 type="text"
+                name="email"
+                minlength="4"
               />
-              <button class="blog-subscribe__form-btn">Начать</button>
-            </div>
+              </div>
+              <div class="blog-subscribe__inner">
+              <button class="blog-subscribe__form-btn" type="submit" name="subs">Начать</button></div>
+            </form>
             <p class="blog-subscribe__descr">
               Получите ответ завтра, если отправите его до 9 вечера сегодня.
               Если мы получили после 9 вечера, мы получим ответ на следующий
@@ -427,7 +472,7 @@
         <div class="blog-footer__wrapper">
           <hr class="blog-footer__hr">
           <div class="blog-footer__contacts">
-            <a class="logo blog-footer__logo" href="#">
+            <a class="logo blog-footer__logo" href="index.html">
               <img src="icons/Logo.svg" alt="logo" />
             </a>
             <p class="blog-footer__descr">
@@ -539,8 +584,63 @@
         </div>
       </div>
     </footer>
+
+     <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__wrapper">
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="icons/close.svg" alt="icon: close" />
+          </a>
+
+          <form action="send.php" method="POST" class="modal__form form">
+            <h3 class="modal__title modal__title_mb-33">Напишите нам</h3>
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              required
+              name="name"
+              minlength="2"
+              maxlength="25"
+            />
+            <input
+              type="tel"
+              class="input modal__input"
+              placeholder="Номер телефона*"
+              required
+              name="phone"
+              minlength="18"
+              maxlength="18"
+            />
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+              minlength="4"
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Сообщение"
+              name="message"
+            ></textarea>
+            <button class="button modal__button" type="submit" name="messa">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательные поля</span>
+          </form>
+        </div>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>  
     <script src="js/main.js"></script>
   </body>
 </html>
