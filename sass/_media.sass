@@ -988,6 +988,11 @@
     &__wrapper
         max-width: 560px
         max-height: 360px
+  .modal
+    &__dialog
+      overflow: auto
+      &--visible
+        min-width: 70%  
       
 @media (max-width: 600px)
   .blog-posts
@@ -1227,7 +1232,23 @@
     &__wrapper
         max-width: 100%
         height: 250px
+  .modal
+    &__dialog    
+      &--visible
+        min-width: 90%      
+    &__info
+      margin-left: 5px
+      margin-top: 15px
 
+  .invalid
+    &-searcheses
+      font-size: 16px
+  .modal
+    &__input
+      min-width: 80%
+      max-width: 100%
+    &__dialog
+      padding: 30px
 
 @media (max-width: 337px)
   .blog-posts
@@ -1983,6 +2004,22 @@
         width: 97%
       &--w320
         width: 97%
+  .invalid
+    &-searcheses
+      font-size: 14px
+      line-height: 20px
+  .modal
+    &__title
+      font-size: 16px
+    &__input
+      min-width: 80%
+      max-width: 100%
+      font-size: 16px
+    &__dialog
+      padding: 20px
+    &__button
+      min-width: 100%
+
 
 @media (max-width: 319px)
   .quote

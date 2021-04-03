@@ -154,7 +154,7 @@ jQuery(document).ready(function () {
       errorClass: "invalid-searcheses",
       messages: {
         search: {
-          required: "Введите ваш запрос",
+          required: "Введите запрос",
           minlength: "Запрос - минимум 2 буквы",
         },
       },
