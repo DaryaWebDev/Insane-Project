@@ -52,13 +52,13 @@
                   ></a>
                   <ul class="menu__hiden-items">
                     <li class="menu__hiden-item">
-                      <a href="#">Новостное агенство</a>
+                      <a href="#news">Последние статьи</a>
                     </li>
                     <li class="menu__hiden-item">
-                      <a href="#">Услуги продвижения</a>
+                      <a href="#serv">Примеры из практики</a>
                     </li>
                     <li class="menu__hiden-item">
-                      <a href="#">Акции</a>
+                      <a href="#share">Все статьи</a>
                     </li>
                   </ul>
                 </li>
@@ -154,7 +154,7 @@
     </header>
 
         <div class="blog-burger">
-          <div class="blog-burger__wrapper">
+          <div class="blog-burger__wrapper" id="burger">
             <nav class="menu-list blog-burger__menu-list">
                 		<div class="menu-list__wrapper">
                       <div class="menu-list__one">
@@ -163,9 +163,9 @@
                           <div class="menu-list__title">Лендинги</div>
                           <div class="menu-list__text">
                             <ul class="menu-list__items">
-                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Tesla"</a></li>
-                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Продажа недвижимости"</a></li>
-                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Лендинг "Автосалон"</a></li>
+                              <li class="menu-list__li"><a href="#" class="menu-list__link">Лендинг "Tesla"</a></li>
+                              <li class="menu-list__li"><a href="#" class="menu-list__link">Лендинг "Продажа недвижимости"</a></li>
+                              <li class="menu-list__li"><a href="#" class="menu-list__link">Лендинг "Автосалон"</a></li>
                             </ul>                            
                           </div>
                         </div>
@@ -173,19 +173,20 @@
                           <div class="menu-list__title">Страницы</div>
                           <div class="menu-list__text">
                             <ul class="menu-list__items">
-                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Новостное агенство</a></li>
-                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Услуги продвижения</a></li>
-                              <li class="menu-list__li"><a href="blog.html" class="menu-list__link">Акции</a></li>
+                              <li class="menu-list__li"><a href="#" class="menu-list__link">Последние статьи</a></li>
+                              <li class="menu-list__li"><a href="#" class="menu-list__link">Примеры из практики</a></li>
+                              <li class="menu-list__li"><a href="#" class="menu-list__link">Все статьи</a></li>
 
                             </ul>
                           </div>
                         </div>
                         <a class="menu-list-link" href="blog.html">Помощь</a>
+                        <a data-toggle="modal" class="blog-burger__btn">Получить</a>
                         
                     </div>
                 </div>
             </nav>
-            <a data-toggle="modal" class="blog-burger__btn">Получить</a>
+            
           </div>
         </div>
 
@@ -288,7 +289,7 @@
 
     <section class="latest">
       <div class="container">
-        <h2 class="latest__title">Последние <span class="lowercase">С</span>татьи</h2>
+        <h2 class="latest__title" id="news">Последние <span class="lowercase">С</span>татьи</h2>
         <div class="latest__info">
           <div class="latest__text">
             Вот чем мы занимались в последнее время.
@@ -435,7 +436,7 @@
     <section class="practice">
       <div class="container">
         <div class="practice__info">
-          <h2 class="practice__title">Примеры из практики</h2>
+          <h2 class="practice__title" id="serv">Примеры из практики</h2>
           <div class="practice__text">
             Вот чем мы занимались в последнее <span class="practice__span practice__span--ml3">время.</span>
           </div>
@@ -566,7 +567,7 @@
     <!-- /.practice -->
 
 
-    <section class="all">
+    <section class="all" id="share">
       <div class="container">
         <div class="all__wrap">
         <div class="all__info">

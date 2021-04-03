@@ -145,12 +145,7 @@
     &:hover
       cursor: pointer
       background-color: #1565D8
-
-
-        
-
-
-           
+     
 
 @media (max-width: 1440px)
   .all
@@ -329,6 +324,8 @@
 
   .break
     display: inline
+  .invalid-subscribe
+    font-size: 16px
 
 @media (max-width: 992px)
   .container
@@ -500,7 +497,7 @@
       flex-wrap: wrap
       &-input
         flex-basis: 100%
-        margin-bottom: 12px
+        margin-bottom: 4px
       &-btn
         flex-basis: 100%
         margin-left: 0
@@ -529,7 +526,7 @@
       flex-wrap: wrap
       &-input
         flex-basis: 100%
-        margin-bottom: 12px
+        margin-bottom: 4px
       &-btn
         flex-basis: 100%
         margin-left: 0
@@ -667,10 +664,14 @@
       margin-top: 10px
       &--w320
         width: 100%
-
-
-
-
+  .invalid, .invalid-subscribe, .input
+    font-size: 15px
+  .subscribe, .blog-subscribe
+    &__form
+      flex-direction: column
+      justify-content: space-between
+      height: 156px
+  
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -1250,6 +1251,19 @@
     &__dialog
       padding: 30px
 
+@media (max-width: 403px)
+  .modal
+    &__button
+      order: 3
+      width: 100%
+    &__info
+      order: 2
+      margin-right: 4px
+      margin-bottom: 10px
+      margin-top: 0px
+  .invalid, .invalid-subscribe, .input 
+    font-size: 13px
+
 @media (max-width: 337px)
   .blog-posts
     &__title
@@ -1576,10 +1590,12 @@
       &--hidden
         display: inline
     &__form
+      height: 108px
       &-input
         height: 48px
         min-width: 95%
         flex-basis: 97%
+        margin-bottom: -8px
       &-btn
         min-height: 48px
         height: 48px
@@ -1593,6 +1609,8 @@
       text-align: left
     &__wave
       display: none
+  .invalid-subscribe
+    font-size: 11px
 
   .footer
     padding-bottom: 1px
@@ -2019,8 +2037,14 @@
       padding: 20px
     &__button
       min-width: 100%
-
-
+  .blog-subscribe
+    &__form
+      height: 108px
+      &-input        
+        margin-bottom: -8px
+  .menu-list
+    &__one
+      margin-left: 5%
 @media (max-width: 319px)
   .quote
     max-width: 200%

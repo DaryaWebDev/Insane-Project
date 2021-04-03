@@ -58,6 +58,7 @@ jQuery(document).ready(function () {
        .querySelector(".blog-burger__wrapper")
       .classList.toggle("blog-burger__wrapper--visible");
       body.classList.toggle("no-scroll");
+      burger.classList.toggle("scroll-burger");
     
    });
 
@@ -138,7 +139,7 @@ jQuery(document).ready(function () {
           },
           email: {
             required: "Нам нужен ваш email для связи с вами",
-            email: "Используйте этот формат: name@domain.com",
+            email: "Форма email: name@domain.com",
             minlength: "Минимальное значение 4 символа",
           },
           phone: {
@@ -168,7 +169,7 @@ jQuery(document).ready(function () {
         email: {
           required: "Введите адрес электронной почты",
           minlength: "Минимальное значение 4 символа",
-          email:"Используйте этот формат: name@domain.com",
+          email: "Форма email: name@domain.com",
         },
       },
     });
